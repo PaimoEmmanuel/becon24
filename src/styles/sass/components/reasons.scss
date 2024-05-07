@@ -1,0 +1,89 @@
+.reasons {
+  &-heading {
+    @apply text-2xl w-[25.375rem] font-black  text-center mx-auto;
+    font-variation-settings: "wght" 870, "wdth" 132;
+  }
+  &-btn-grp {
+    @apply flex gap-1 justify-center mt-8 mb-[3.75rem];
+    button {
+      @apply w-[7.375rem] h-[2.625rem];
+    }
+    .active {
+      @apply border-2 border-[#B88D38] rounded-full;
+    }
+  }
+  .testimony {
+    @apply flex text-white;
+    &-text {
+      @apply w-1/2 pr-[4.625rem] ml-auto max-w-[34rem] pt-[4.375rem];
+    }
+    &-name {
+      @apply text-2xl mb-2;
+    }
+    &-content {
+      @apply text-[#FFFFFFCC] mb-4;
+    }
+    &-options {
+      @apply flex gap-5;
+      button {
+        @apply w-[74px] h-[74px] rounded-lg overflow-hidden opacity-50;
+        img {
+          @apply w-full h-full object-cover;
+        }
+      }
+      .active {
+        @apply border-[3px] border-[#F1C670] opacity-100;
+      }
+    }
+    &-img {
+      @apply top-0 right-0 w-1/2;
+    }
+  }
+  .previous {
+    @apply site-container flex gap-[5.75rem] pt-[13.25rem]  relative z-10;
+    &-heading {
+      @apply text-[3.5rem] text-white leading-[3.375rem] font-black w-fit;
+      font-variation-settings: "wght" 870, "wdth" 132;
+      span {
+        @apply text-[#B88D38];
+      }
+    }
+    &-text {
+      @apply text-[#FFFFFFCC];
+    }
+    &-grid {
+      @apply bg-[#000000] relative pt-[4.5rem];
+      .top-bg {
+        @apply absolute right-0 -top-96;
+      }
+      .bottom-bg {
+        @apply absolute left-0 -bottom-96;
+      }
+    }
+  }
+  .stream {
+    @apply site-container flex gap-[5.75rem] pt-[8.625rem] pb-[9.625rem] relative z-10;
+    &-heading {
+      @apply text-[3.5rem] text-white leading-[3.375rem] font-black w-fit;
+      font-variation-settings: "wght" 870, "wdth" 132;
+      span {
+        @apply text-[#B88D38];
+      }
+    }
+    &-cards {
+      @apply flex gap-8;
+    }
+    &-card {
+      @apply bg-[#292929] text-white w-[15.5rem] h-[16.25rem] px-6 py-8 rounded-lg;
+    }
+    &-icon {
+    }
+    &-text {
+      @apply text-2xl font-black mt-6 mb-8 leading-[1.875rem];
+      font-variation-settings: "wght" 870, "wdth" 132;
+    }
+    &-link {
+      @apply text-sm font-medium flex w-full h-10 bg-[#ED1C24] justify-between px-8 items-center rounded-lg;
+    }
+  }
+}

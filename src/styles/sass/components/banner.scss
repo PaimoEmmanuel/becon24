@@ -1,0 +1,24 @@
+.banner {
+  @apply site-container flex items-center justify-between mt-16 gap-20;
+  &-text {
+  }
+  &-heading {
+    @apply font-black text-7xl leading-[4rem];
+    font-variation-settings: "wght" 1000, "wdth" 133;
+  }
+  &-subheading {
+    @apply text-xl tracking-[0.2875rem] uppercase mt-2;
+    span {
+      @apply italic text-[#B88D38];
+    }
+  }
+  &-img {
+    @apply w-1/2;
+  }
+  &-date {
+    @apply tracking-[0.2875rem] mt-4 mb-8;
+  }
+  &-btn {
+    @apply w-[280px] h-[50px] bg-black rounded-lg flex justify-center items-center text-white font-medium;
+  }
+}

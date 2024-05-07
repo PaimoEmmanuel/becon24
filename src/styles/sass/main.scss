@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./base/base.scss";
+@import "./base/utitlities.scss";
+
+@import "./components/navbar.scss";
+@import "./components/countdown.scss";
+@import "./components/banner.scss";
+@import "./components/about.scss";
+@import "./components/reasons.scss";
+@import "./components/image-grid.scss";
+@import "./components/faqs.scss";
+@import "./components/question.scss";
+@import "./components/newsletter.scss";
+@import "./components/footer.scss";

@@ -1,0 +1,31 @@
+.faqs {
+  @apply site-container pt-[8.5rem] pb-[10.5625rem];
+  &-supertitle {
+    @apply text-[#B88D38] font-medium text-center tracking-[12.8px] mb-2;
+  }
+  &-title {
+    @apply text-2xl font-black  text-center mx-auto;
+    font-variation-settings: "wght" 870, "wdth" 132;
+  }
+  &-wrapper {
+    @apply mt-12;
+  }
+}
+.faq {
+  @apply bg-[#FAFAFA] p-8 rounded-lg mb-4;
+  &-title {
+    @apply text-2xl font-semibold flex w-full justify-between;
+    h5 {
+      @apply max-w-[51rem];
+    }
+  }
+  &-text {
+    @apply mt-4 text-[#000000B2] max-w-[51rem] transition-all;
+    a {
+      @apply text-[#1B5ECE] font-semibold underline uppercase;
+    }
+  }
+  .open {
+    @apply h-0 overflow-hidden mt-0;
+  }
+}

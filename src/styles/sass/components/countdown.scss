@@ -1,0 +1,16 @@
+.countdown {
+  @apply flex mt-10 gap-2;
+  &-colon {
+    @apply mt-6;
+  }
+}
+.time-figure {
+  @apply flex flex-col justify-center items-center w-[4.625rem] h-[6.25rem] rounded border-b-[0.75rem] border-[#EBDCC0];
+  box-shadow: 0px 0px 16px 0px #f2e4c7;
+  .figure {
+    @apply text-[1.875rem] font-extrabold;
+  }
+  .time {
+    @apply text-[0.625rem] font-medium text-[#A1957D];
+  }
+}

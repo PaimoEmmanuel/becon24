@@ -1,0 +1,16 @@
+.question {
+  @apply site-container flex justify-between items-center;
+  &-title {
+    @apply text-[3.5rem] font-black leading-[3.375rem] w-1/2 mb-8;
+    font-variation-settings: "wght" 870, "wdth" 133;
+    span {
+      @apply text-[#B88D38];
+    }
+  }
+  &-btn {
+    @apply w-[252px] h-[52px] bg-black rounded-lg text-white font-semibold flex justify-center items-center;
+  }
+  &-img {
+    @apply w-[26.3125rem];
+  }
+}

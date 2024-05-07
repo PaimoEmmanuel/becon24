@@ -1,0 +1,6 @@
+.footer {
+  @apply site-container border-t border-[#E1E1E1] pt-[2.5rem] pb-[3.125rem] mt-[7.875rem];
+  &-text {
+    @apply text-center;
+  }
+}

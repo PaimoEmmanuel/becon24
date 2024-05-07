@@ -1,0 +1,18 @@
+.nav {
+  @apply site-container flex w-full gap-16 items-center py-4;
+  &-wrap {
+    @apply flex w-full justify-between items-center text-sm font-medium;
+  }
+  &-links {
+    @apply flex gap-8 items-center;
+  }
+  &-details {
+    @apply flex gap-10;
+  }
+  &-dropdown {
+    @apply flex gap-4 items-center;
+  }
+  &-button {
+    @apply w-[9.5rem] bg-black text-white flex items-center justify-center h-10 rounded-lg;
+  }
+}

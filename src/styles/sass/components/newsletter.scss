@@ -1,0 +1,19 @@
+.newsletter {
+  @apply site-container mt-[7.5rem];
+  &-supertitle {
+    @apply text-[#B88D38] font-medium text-center tracking-[12.8px] mb-2;
+  }
+  &-title {
+    @apply text-2xl text-center font-black;
+    font-variation-settings: "wght" 870, "wdth" 133;
+  }
+  &-form {
+    @apply flex max-w-[37.0625rem] h-[3.125rem] mx-auto rounded-lg border border-[#EEDFC2] overflow-hidden bg-[#FFFCF6] mt-8;
+  }
+  &-input {
+    @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] h-full w-full rounded-lg;
+  }
+  &-btn {
+    @apply w-[3.75rem] h-full flex bg-[#B88D38] justify-center items-center;
+  }
+}
