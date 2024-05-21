@@ -43,7 +43,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 @media screen and (min-width: 370px) {
   html,
@@ -264,6 +263,9 @@ body {
   @apply opacity-0 duration-[.5s]  absolute top-1/2 -translate-y-1/2 rounded-md;
 }
 
+.reasons {
+  @apply overflow-x-hidden;
+}
 .reasons-heading {
   @apply site-container text-lg sm:text-2xl sm:w-[37.375rem] font-black  text-center;
   font-variation-settings: "wght" 870, "wdth" 132;

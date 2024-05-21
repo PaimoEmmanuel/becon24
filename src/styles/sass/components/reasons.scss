@@ -1,4 +1,5 @@
 .reasons {
+  @apply overflow-x-hidden;
   &-heading {
     @apply site-container text-lg sm:text-2xl sm:w-[37.375rem] font-black  text-center;
     font-variation-settings: "wght" 870, "wdth" 132;
