@@ -156,10 +156,10 @@ const About = () => {
           ))}
         </div>
         <div className="target-img-wrapper">
-          {targets.map((target) => (
+          {targets.map((target, index) => (
             <img
               key={target.title}
-              className="target-img open"
+              className={`target-img ${index === 0 ? "open" : ""}`}
               src={target.image}
               alt={target.title}
             />
