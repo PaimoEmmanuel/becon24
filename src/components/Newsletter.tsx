@@ -6,6 +6,11 @@ const Newsletter = () => {
       <form className="newsletter-form" action="">
         <input
           className="newsletter-input"
+          type="fullname"
+          placeholder="Full name"
+        />
+        <input
+          className="newsletter-input"
           type="email"
           placeholder="your email address"
         />

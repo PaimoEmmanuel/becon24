@@ -2,6 +2,37 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <img src="/logo.png" alt="" />
+      <button className="nav-menu">
+        <svg
+          width="28"
+          height="27"
+          viewBox="0 0 28 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 2.8335H26"
+            stroke="#292D32"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2 13.5H26"
+            stroke="#292D32"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2 24.1665H26"
+            stroke="#292D32"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
       <div className="nav-wrap">
         <ul className="nav-links">
           <li>

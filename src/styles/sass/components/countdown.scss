@@ -1,16 +1,17 @@
 .countdown {
-  @apply flex mt-10 gap-2;
+  @apply flex mt-10 gap-2 justify-center lg:justify-normal;
   &-colon {
     @apply mt-6;
   }
 }
 .time-figure {
-  @apply flex flex-col justify-center items-center w-[4.625rem] h-[6.25rem] rounded border-b-[0.75rem] border-[#EBDCC0];
-  box-shadow: 0px 0px 16px 0px #f2e4c7;
+  @apply flex flex-col justify-center items-center w-[3.25rem] sm:w-[4.625rem] h-[4.375rem] sm:h-[6.25rem] rounded border-b-[0.5rem] sm:border-b-[0.75rem] border-[#EBDCC0];
+  @apply shadow-[0px_0px_11px_0px_#f2e4c7] sm:shadow-[0px_0px_16px_0px_#f2e4c7];
+
   .figure {
-    @apply text-[1.875rem] font-extrabold;
+    @apply text-xl sm:text-[1.875rem] font-extrabold;
   }
   .time {
-    @apply text-[0.625rem] font-medium text-[#A1957D];
+    @apply text-[0.5rem] sm:text-[0.625rem] font-medium text-[#A1957D];
   }
 }

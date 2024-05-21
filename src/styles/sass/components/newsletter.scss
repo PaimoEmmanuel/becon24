@@ -1,19 +1,25 @@
 .newsletter {
-  @apply site-container mt-[7.5rem];
+  @apply site-container mt-[6.625rem] sm:mt-[7.5rem];
   &-supertitle {
-    @apply text-[#B88D38] font-medium text-center tracking-[12.8px] mb-2;
+    @apply text-xs sm:text-base text-[#B88D38] font-medium text-center tracking-[12.8px] mb-4 sm:mb-2;
   }
   &-title {
-    @apply text-2xl text-center font-black;
+    @apply text-lg leading-[1.125rem] sm:text-2xl sm:leading-8 text-center font-black;
     font-variation-settings: "wght" 870, "wdth" 133;
   }
   &-form {
-    @apply flex max-w-[37.0625rem] h-[3.125rem] mx-auto rounded-lg border border-[#EEDFC2] overflow-hidden bg-[#FFFCF6] mt-8;
+    @apply flex flex-wrap max-w-[37.0625rem] mx-auto overflow-hidden mt-8;
   }
   &-input {
-    @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] h-full w-full rounded-lg;
+    @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] bg-[#FFFCF6] w-full rounded-lg border border-[#EEDFC2] h-[3.125rem];
+    &:first-child {
+      @apply w-[13.4375rem] mb-4 sm:mb-0 sm:mr-4;
+    }
+    &:nth-child(2) {
+      @apply flex-1 rounded-r-none min-w-[17.5rem];
+    }
   }
   &-btn {
-    @apply w-[3.75rem] h-full flex bg-[#B88D38] justify-center items-center;
+    @apply w-[3.75rem] flex bg-[#B88D38] justify-center items-center h-[3.125rem] rounded-r-lg;
   }
 }

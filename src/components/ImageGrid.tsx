@@ -11,12 +11,12 @@ const images = [
   { src: "/grid-2.png", className: "" },
 ];
 const ImageGrid = () => (
-  <div className="image-grid">
+  <div className="image-grid slide-track">
     {images.map((image, index) => (
       <div
         key={image.src + index}
         data-lightbox="homePortfolio"
-        className={image.className}
+        className={image.className + " slide"}
       >
         <img src={image.src} />
       </div>

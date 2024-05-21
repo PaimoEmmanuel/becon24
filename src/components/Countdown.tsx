@@ -1,7 +1,32 @@
+import { useEffect, useState } from "react";
+
+function getTimeRemaining(endtime: string) {
+  const total = Date.parse(endtime) - Date.parse(new Date().toString());
+  const seconds = Math.floor((total / 1000) % 60);
+  const minutes = Math.floor((total / 1000 / 60) % 60);
+  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds,
+  };
+}
+
 const Countdown = () => {
+  const [time, setTime] = useState(getTimeRemaining("2024-08-18"));
+  useEffect(() => {
+    setInterval(() => {
+      setTime(getTimeRemaining("2024-08-18"));
+    }, 1000);
+  }, []);
+
   return (
     <div className="countdown">
-      <TimeFigure figure={45} time="DAYS" />
+      <TimeFigure figure={time.days} time="DAYS" />
       <span className="countdown-colon">
         <svg
           width="6"
@@ -14,7 +39,7 @@ const Countdown = () => {
           <circle cx="3" cy="17.5" r="3" fill="#EBDCC0" />
         </svg>
       </span>
-      <TimeFigure figure={22} time="HOURS" />
+      <TimeFigure figure={time.hours} time="HOURS" />
       <span className="countdown-colon">
         <svg
           width="6"
@@ -27,7 +52,7 @@ const Countdown = () => {
           <circle cx="3" cy="17.5" r="3" fill="#EBDCC0" />
         </svg>
       </span>
-      <TimeFigure figure={34} time="MINS" />
+      <TimeFigure figure={time.minutes} time="MINS" />
       <span className="countdown-colon">
         <svg
           width="6"
@@ -40,7 +65,7 @@ const Countdown = () => {
           <circle cx="3" cy="17.5" r="3" fill="#EBDCC0" />
         </svg>
       </span>
-      <TimeFigure figure={12} time="SECS" />
+      <TimeFigure figure={time.seconds} time="SECS" />
     </div>
   );
 };

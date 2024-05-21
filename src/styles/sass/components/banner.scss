@@ -1,24 +1,26 @@
 .banner {
-  @apply site-container flex items-center justify-between mt-16 gap-20;
+  @apply site-container flex flex-col lg:flex-row items-center justify-between mt-16 gap-20;
   &-text {
+    @apply text-center lg:text-left;
   }
   &-heading {
-    @apply font-black text-7xl leading-[4rem];
+    @apply font-black text-[3rem] sm:text-7xl leading-[2.828125rem] sm:leading-[4rem];
     font-variation-settings: "wght" 1000, "wdth" 133;
   }
   &-subheading {
-    @apply text-xl tracking-[0.2875rem] uppercase mt-2;
+    @apply text-sm sm:text-xl tracking-[0.2875rem] uppercase mt-2;
     span {
       @apply italic text-[#B88D38];
     }
   }
   &-img {
-    @apply w-1/2;
+    @apply min-w-full lg:min-w-[50%] lg:max-w-[50%] transition-all;
   }
   &-date {
     @apply tracking-[0.2875rem] mt-4 mb-8;
   }
   &-btn {
-    @apply w-[280px] h-[50px] bg-black rounded-lg flex justify-center items-center text-white font-medium;
+    @apply w-[280px] h-[50px] bg-black hover:bg-[#B88D38] transition-all rounded-lg flex justify-center items-center text-white font-medium;
+    @apply mx-auto lg:mx-0;
   }
 }

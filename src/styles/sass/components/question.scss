@@ -1,16 +1,17 @@
 .question {
-  @apply site-container flex justify-between items-center;
+  @apply site-container flex justify-center lg:justify-between items-center;
   &-title {
-    @apply text-[3.5rem] font-black leading-[3.375rem] w-1/2 mb-8;
+    @apply text-[2rem] sm:text-[3.5rem] font-black leading-[1.9625rem] sm:leading-[3.375rem] lg:w-1/2 mb-8 text-center lg:text-left;
     font-variation-settings: "wght" 870, "wdth" 133;
     span {
       @apply text-[#B88D38];
     }
   }
   &-btn {
-    @apply w-[252px] h-[52px] bg-black rounded-lg text-white font-semibold flex justify-center items-center;
+    @apply w-[252px] h-[52px] bg-black hover:bg-[#B88D38] transition-all rounded-lg text-white font-semibold flex justify-center items-center;
+    @apply mx-auto lg:mx-0;
   }
   &-img {
-    @apply w-[26.3125rem];
+    @apply hidden lg:block lg:w-[26.3125rem];
   }
 }
