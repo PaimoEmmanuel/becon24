@@ -12,12 +12,28 @@
     @apply flex gap-8 items-center;
   }
   &-details {
-    @apply flex gap-10;
+    @apply flex gap-10 relative;
   }
   &-dropdown {
-    @apply flex gap-4 items-center;
+    @apply flex gap-4 items-center cursor-pointer;
   }
   &-button {
     @apply w-[9.5rem] bg-black hover:bg-[#B88D38] transition-all text-white flex items-center justify-center h-10 rounded-lg;
+  }
+  .socials {
+    @apply absolute flex w-[21rem] gap-6 top-12 p-3 z-10 rounded-lg -left-40 bg-white duration-[.3s] opacity-0 transform -translate-x-6;
+    box-shadow: 0px 4px 28px 0px #c5c5c54d;
+    &-show {
+      @apply opacity-100 translate-x-0;
+    }
+    .social {
+      @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-1 px-5;
+      a {
+        @apply flex whitespace-nowrap;
+      }
+      img {
+        @apply w-[0.6875rem] h-[0.6875rem];
+      }
+    }
   }
 }

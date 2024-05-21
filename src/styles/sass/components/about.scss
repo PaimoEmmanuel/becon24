@@ -48,11 +48,11 @@
         @apply hidden lg:flex sticky top-0 h-screen items-center min-w-[50%];
 
         .open {
-          @apply opacity-100 w-full translate-x-[0rem];
+          @apply opacity-100 w-full;
         }
       }
       &-img {
-        @apply opacity-0 duration-[.5s] transform translate-x-[20rem] absolute top-1/2 -translate-y-1/2 rounded-md;
+        @apply opacity-0 duration-[.5s]  absolute top-1/2 -translate-y-1/2 rounded-md;
       }
     }
   }

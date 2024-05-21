@@ -1,4 +1,26 @@
+import { useEffect, useRef, useState } from "react";
+import { socials, socialsTwo } from "../utils/data";
+
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef<HTMLParagraphElement>(null);
+  useEffect(() => {
+    // const specifiedElement = document.getElementById("testDiv");
+    document.addEventListener("click", function (event) {
+      if (dropdownRef.current) {
+        const isClickInside = dropdownRef.current.contains(
+          event.target as Node
+        );
+        if (isClickInside) {
+          console.log("You clicked inside");
+          setShowDropdown(true);
+        } else {
+          console.log("You clicked outside");
+          setShowDropdown(false);
+        }
+      }
+    });
+  }, []);
   return (
     <nav className="nav">
       <img src="/logo.png" alt="" />
@@ -43,7 +65,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="nav-details">
-          <p className="nav-dropdown">
+          <p ref={dropdownRef} className="nav-dropdown">
             Follow BECON online
             <svg
               width="19"
@@ -62,6 +84,36 @@ const Navbar = () => {
               />
             </svg>
           </p>
+          <div className={`socials ${showDropdown ? "socials-show" : ""}`}>
+            <div>
+              {socials.map((social) => (
+                <div
+                  className="social"
+                  key={social.title}
+                  style={{ backgroundColor: social.bgColor }}
+                >
+                  {social.icon}
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    style={{ color: social.color }}
+                  >
+                    {social.title}
+                  </a>
+                </div>
+              ))}
+            </div>
+            <div>
+              {socialsTwo.map((social) => (
+                <div className="social" key={social.title}>
+                  <img src={social.img} alt={social.title} />
+                  <a href={social.link} target="_blank">
+                    {social.title}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
           <a className="nav-button" href="">
             Register now
           </a>

@@ -736,12 +736,14 @@ body {
 }
 
 .nav-details {
+  position: relative;
   display: flex;
   gap: 2.5rem;
 }
 
 .nav-dropdown {
   display: flex;
+  cursor: pointer;
   align-items: center;
   gap: 1rem;
 }
@@ -765,6 +767,56 @@ body {
 .nav-button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(184 141 56 / var(--tw-bg-opacity));
+}
+
+.nav .socials {
+  position: absolute;
+  top: 3rem;
+  left: -10rem;
+  z-index: 10;
+  display: flex;
+  width: 21rem;
+  --tw-translate-x: -1.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  gap: 1.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  opacity: 0;
+  transition-duration: .3s;
+  box-shadow: 0px 4px 28px 0px rgba(197, 197, 197, 0.3019607843);
+}
+
+.nav .socials-show {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
+.nav .socials .social {
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.nav .socials .social a {
+  display: flex;
+  white-space: nowrap;
+}
+
+.nav .socials .social img {
+  height: 0.6875rem;
+  width: 0.6875rem;
 }
 
 .countdown {
@@ -1262,15 +1314,12 @@ body {
 
 .about-becon .target-img-wrapper .open {
   width: 100%;
-  --tw-translate-x: 0rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   opacity: 1;
 }
 
 .about-becon .target-img {
   position: absolute;
   top: 50%;
-  --tw-translate-x: 20rem;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 0.375rem;

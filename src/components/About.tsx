@@ -16,7 +16,29 @@ function isElementInViewport(el: Element) {
 }
 
 const About = () => {
-  const targets = ["A", "B", "C"];
+  const targets = [
+    {
+      title: "BECON FOR ADULTS",
+      content:
+        "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
+      date: "AUG 6TH - 12TH, 2023",
+      image: "/becon-attendee.png",
+    },
+    {
+      title: "BECON FOR TEENS",
+      content:
+        "At Believers’ Convention, Teenagers enjoy a 6-day fellowship with the Lord. They are redirected to their true purpose in God and strengthened against prevalent youthful lusts that plague young people in the world today.",
+      date: "AUG 6TH - 12TH, 2023",
+      image: "/becon-teens.png",
+    },
+    {
+      title: "BECON FOR KIDS",
+      content:
+        "Jesus loves little children! While parents enjoy the atmosphere of the word of truth, little ones from ages 3-11 are not left out in the ministration of the gospel. They are also exposed to an atmosphere of grace and truth!",
+      date: "AUG 6TH - 12TH, 2023",
+      image: "/becon-kids.png",
+    },
+  ];
   useEffect(() => {
     const targetLinks = document.querySelectorAll(".target-link");
     const targetImages = document.querySelectorAll(".target-img");
@@ -55,19 +77,14 @@ const About = () => {
       <div className="about-becon">
         <div>
           {targets.map((target) => (
-            <div className="target-wrapper" key={target}>
-              <img className="" src="/becon-attendee.png" alt="" />
+            <div className="target-wrapper" key={target.title}>
+              <img className="" src={target.image} alt={target.title} />
 
               <div className="target">
-                <p className="target-title">BECON FOR EVERYONE</p>
-                <p className="target-body">
-                  Men and women gather from all over the world for a great
-                  encounter, irrespective of denomination and culture.
-                  Believers’ Convention provides a platform for intense
-                  fellowship with the Lord and the brethren.
-                </p>
-                <p className="target-holds">BECON FOR EVERYONE HOLDS:</p>
-                <p className="target-date">AUG 6TH - 12TH, 2024</p>
+                <p className="target-title">{target.title}</p>
+                <p className="target-body">{target.content}</p>
+                <p className="target-holds">{target.title} HOLDS:</p>
+                <p className="target-date">{target.date}</p>
               </div>
               <a className="target-link" href="">
                 Add to calender
@@ -139,11 +156,14 @@ const About = () => {
           ))}
         </div>
         <div className="target-img-wrapper">
-          <img className="target-img open" src="/becon-attendee.png" alt="" />
-          {/* <img className="target-img " src="/becon-attendee.png" alt="" />
-          <img className="target-img " src="/becon-attendee.png" alt="" /> */}
-          <img className="target-img" src="/pst-emeka.png" alt="" />
-          <img className="target-img" src="/grid-1.png" alt="" />
+          {targets.map((target) => (
+            <img
+              key={target.title}
+              className="target-img open"
+              src={target.image}
+              alt={target.title}
+            />
+          ))}
         </div>
       </div>
     </div>
