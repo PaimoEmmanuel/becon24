@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Testimony from "./Testimony";
-import HorizontalScroll from "./FixedScroll";
-// import InfiniteScroll from "./InfiniteScroll";
+import InfiniteScroll from "./InfiniteScroll";
 
 const testimonies = {
   ministers: [
@@ -124,9 +123,7 @@ const Reasons = () => {
             </filter>
           </defs>
         </svg>
-        {/* <ImageGrid /> */}
-        {/* <InfiniteScroll /> */}
-        <HorizontalScroll />
+        <InfiniteScroll />
         <svg
           className="bottom-bg"
           width="754"
