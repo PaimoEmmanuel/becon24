@@ -67,7 +67,7 @@ body {
 }
 .nav-wrapper {
   box-shadow: 0px 4px 28px 0px rgba(197, 197, 197, 0.2509803922);
-  @apply fixed bg-white dark:bg-black dark:text-white top-0 left-0 w-full z-50 transition-all;
+  @apply fixed bg-white dark:bg-black dark:text-white top-0 left-0 w-full z-50 duration-[.5s] lg:shadow-none;
 }
 .nav-menu {
   @apply lg:hidden ml-auto;
@@ -235,7 +235,7 @@ body {
   @apply site-container flex flex-col lg:flex-row  gap-20 pt-20 relative;
 }
 .about-becon-wrapper {
-  @apply dark:bg-black dark:text-white transition-all;
+  @apply dark:bg-black dark:text-white duration-[.5s];
 }
 .about-becon .target {
   @apply lg:border-l-[0.5625rem] border-[#B88D38] lg:pl-8 text-center lg:text-left mt-6 lg:mt-0;

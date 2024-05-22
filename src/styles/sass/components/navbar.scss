@@ -2,7 +2,7 @@
   @apply site-container flex w-full gap-16 items-center py-4;
   &-wrapper {
     box-shadow: 0px 4px 28px 0px #c5c5c540;
-    @apply fixed bg-white dark:bg-black dark:text-white top-0 left-0 w-full z-50 transition-all;
+    @apply fixed bg-white dark:bg-black dark:text-white top-0 left-0 w-full z-50 duration-[.5s] lg:shadow-none;
   }
   &-menu {
     @apply lg:hidden ml-auto;
