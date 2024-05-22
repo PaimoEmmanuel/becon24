@@ -21,7 +21,7 @@
   &-becon {
     @apply site-container flex flex-col lg:flex-row  gap-20 pt-20 relative;
     &-wrapper {
-      @apply dark:bg-black dark:text-white transition-all;
+      @apply dark:bg-black dark:text-white duration-[.5s];
     }
     .target {
       @apply lg:border-l-[0.5625rem] border-[#B88D38] lg:pl-8 text-center lg:text-left mt-6 lg:mt-0;
