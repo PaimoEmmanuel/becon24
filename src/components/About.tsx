@@ -53,7 +53,7 @@ const About = () => {
         if (
           beconWrapper &&
           beconWrapper.getBoundingClientRect().top < 0 &&
-          beconWrapper.getBoundingClientRect().bottom > 100
+          beconWrapper.getBoundingClientRect().bottom > window.innerHeight
         ) {
           document.querySelector("html")?.classList.add("dark");
         } else {

@@ -12,7 +12,13 @@ const Banner = () => {
           </p>
           <Countdown />
           <p className="banner-date">AUGUST 18TH - 24TH, 2024</p>
-          <button className="banner-btn">Register now</button>
+          <a
+            href="https://events.egfm.org/"
+            target="_blank"
+            className="banner-btn"
+          >
+            Register now
+          </a>
         </div>
         <CursorTransform />
       </div>
