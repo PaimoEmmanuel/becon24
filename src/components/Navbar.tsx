@@ -24,7 +24,9 @@ const Navbar = () => {
   return (
     <div className="nav-wrapper">
       <nav className="nav">
-        <img src="/logo.png" alt="" />
+        <a href="#home">
+          <img src="/logo.png" alt="EGFM Logo" />
+        </a>
         <button className="nav-menu">
           <svg
             width="28"
@@ -59,10 +61,10 @@ const Navbar = () => {
         <div className="nav-wrap">
           <ul className="nav-links">
             <li>
-              <a href="">About EGFM</a>
+              <a href="https://www.egfm.org/about-us">About EGFM</a>
             </li>
             <li>
-              <a href="">FAQ</a>
+              <a href="#faqs">FAQ</a>
             </li>
           </ul>
           <div className="nav-details">
@@ -121,7 +123,11 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-            <a className="nav-button" href="">
+            <a
+              className="nav-button"
+              target="_blank"
+              href="https://events.egfm.org/"
+            >
               Register now
             </a>
           </div>

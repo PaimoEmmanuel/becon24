@@ -177,14 +177,26 @@ const Reasons = () => {
             <div className="stream-card">
               <img className="stream-icon" src="/mixlr.png" alt="USE MIXLR" />
               <p className="stream-text">STREAM ON MIXLR</p>
-              <a className="stream-link" href="" target="_blank">
+              <a
+                className="stream-link"
+                href="https://egfmfountain.mixlr.com/"
+                target="_blank"
+              >
                 USE MIXLR <span>→</span>
               </a>
             </div>
             <div className="stream-card">
-              <img className="stream-icon" src="/mixlr.png" alt="USE YOUTUBE" />
+              <img
+                className="stream-icon"
+                src="/youtube.png"
+                alt="USE YOUTUBE"
+              />
               <p className="stream-text">STREAM ON YOUTUBE</p>
-              <a className="stream-link" href="" target="_blank">
+              <a
+                className="stream-link"
+                href="https://www.youtube.com/egfmfountain"
+                target="_blank"
+              >
                 USE YOUTUBE <span>→</span>
               </a>
             </div>
