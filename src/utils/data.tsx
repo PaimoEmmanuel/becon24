@@ -1,6 +1,6 @@
 export const socials = [
   {
-    title: "Instagram →",
+    title: "Instagram <span>→</span>",
     link: "",
     color: "#EA597B",
     bgColor: "#FFF4F9",
@@ -25,7 +25,7 @@ export const socials = [
     ),
   },
   {
-    title: "Twitter →",
+    title: "Twitter <span>→</span>",
     link: "",
     color: "#1DA1F2",
     bgColor: "#F2FAFF",
@@ -49,7 +49,7 @@ export const socials = [
     ),
   },
   {
-    title: "YouTube →",
+    title: "YouTube <span>→</span>",
     link: "",
     color: "#ED1D24",
     bgColor: "#FFF1F2",
@@ -83,7 +83,7 @@ export const socials = [
     ),
   },
   {
-    title: "Facebook →",
+    title: "Facebook <span>→</span>",
     link: "",
     bgColor: "#EFF6FF",
     color: "#1877F2",

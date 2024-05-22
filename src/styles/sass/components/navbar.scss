@@ -1,7 +1,9 @@
 .nav {
-  box-shadow: 0px 4px 28px 0px #c5c5c540;
-  @apply site-container flex w-full gap-16 items-center py-4 lg:shadow-none;
-
+  @apply site-container flex w-full gap-16 items-center py-4;
+  &-wrapper {
+    box-shadow: 0px 4px 28px 0px #c5c5c540;
+    @apply fixed bg-white dark:bg-black dark:text-white top-0 left-0 w-full z-50 transition-all;
+  }
   &-menu {
     @apply lg:hidden ml-auto;
   }
@@ -21,15 +23,20 @@
     @apply w-[9.5rem] bg-black hover:bg-[#B88D38] transition-all text-white flex items-center justify-center h-10 rounded-lg;
   }
   .socials {
-    @apply absolute flex w-[21rem] gap-6 top-12 p-3 z-10 rounded-lg -left-40 bg-white duration-[.3s] opacity-0 transform -translate-x-6;
+    @apply absolute flex w-[21rem] gap-6 top-12 p-3 z-10 rounded-lg -left-40 bg-white dark:bg-black duration-[.3s] opacity-0 transform -translate-x-6;
     box-shadow: 0px 4px 28px 0px #c5c5c54d;
     &-show {
       @apply opacity-100 translate-x-0;
     }
     .social {
-      @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-1 px-5;
-      a {
-        @apply flex whitespace-nowrap;
+      @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-1 px-5 w-36;
+      &:hover {
+        .social-text {
+          @apply gap-2;
+        }
+      }
+      &-text {
+        @apply flex whitespace-nowrap gap-1 transition-all;
       }
       img {
         @apply w-[0.6875rem] h-[0.6875rem];
