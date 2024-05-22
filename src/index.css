@@ -633,6 +633,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 370px) {
@@ -758,6 +759,11 @@ body {
   gap: 2rem;
 }
 
+.nav-links a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(184 141 56 / var(--tw-text-opacity));
+}
+
 .nav-details {
   position: relative;
   display: flex;
@@ -792,6 +798,13 @@ body {
   background-color: rgb(184 141 56 / var(--tw-bg-opacity));
 }
 
+.nav-button:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .nav .socials {
   position: absolute;
   top: 3rem;
@@ -805,7 +818,6 @@ body {
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 0.75rem;
   opacity: 0;
   transition-duration: .3s;
 }
@@ -816,12 +828,20 @@ body {
 }
 
 .nav .socials {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  padding: 0px;
   box-shadow: 0px 4px 28px 0px rgba(197, 197, 197, 0.3019607843);
 }
 
 .nav .socials-show {
+  height: auto;
+  width: -moz-fit-content;
+  width: fit-content;
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  padding: 0.75rem;
   opacity: 1;
 }
 
@@ -937,12 +957,12 @@ body {
 }
 
 .banner {
-  margin-top: 9.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
+  padding-top: 9.25rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 80.375rem;

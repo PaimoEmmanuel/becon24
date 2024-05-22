@@ -1,7 +1,7 @@
 export const socials = [
   {
     title: "Instagram <span>→</span>",
-    link: "",
+    link: "https://www.instagram.com/egfmfountain",
     color: "#EA597B",
     bgColor: "#FFF4F9",
     icon: (
@@ -26,7 +26,7 @@ export const socials = [
   },
   {
     title: "Twitter <span>→</span>",
-    link: "",
+    link: "https://www.x.com/egfmfountain",
     color: "#1DA1F2",
     bgColor: "#F2FAFF",
     icon: (
@@ -50,7 +50,7 @@ export const socials = [
   },
   {
     title: "YouTube <span>→</span>",
-    link: "",
+    link: "https://www.youtube.com/egfmfountain",
     color: "#ED1D24",
     bgColor: "#FFF1F2",
     icon: (
@@ -84,7 +84,7 @@ export const socials = [
   },
   {
     title: "Facebook <span>→</span>",
-    link: "",
+    link: "https://web.facebook.com/EGFMfountain/",
     bgColor: "#EFF6FF",
     color: "#1877F2",
     icon: (
@@ -120,17 +120,17 @@ export const socials = [
 export const socialsTwo = [
   {
     title: "Fountain stream",
-    link: "",
+    link: "https://fountainstream.com/",
     img: "/fs.png",
   },
   {
     title: "Mixlr",
-    link: "",
+    link: "https://egfmfountain.mixlr.com/",
     img: "/mixlr.png",
   },
   {
     title: "Waystream",
-    link: "",
+    link: "https://waystre.am/egfmfountain",
     img: "/waystream.png",
   },
 ];

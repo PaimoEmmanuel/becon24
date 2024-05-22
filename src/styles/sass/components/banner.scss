@@ -1,5 +1,5 @@
 .banner {
-  @apply site-container flex flex-col lg:flex-row items-center justify-between gap-20 mt-[9.25rem];
+  @apply site-container flex flex-col lg:flex-row items-center justify-between gap-20 pt-[9.25rem];
   &-text {
     @apply text-center lg:text-left;
   }

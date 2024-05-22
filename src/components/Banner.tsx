@@ -4,7 +4,7 @@ import CursorTransform from "./CursorTransform";
 const Banner = () => {
   return (
     <div id="banner-container">
-      <div className="banner">
+      <div id="home" className="banner">
         <div className="banner-text">
           <h1 className="banner-heading">BECON24 IS HERE</h1>
           <p className="banner-subheading">
