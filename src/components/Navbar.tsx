@@ -12,10 +12,8 @@ const Navbar = () => {
           event.target as Node
         );
         if (isClickInside) {
-          console.log("You clicked inside");
           setShowDropdown(true);
         } else {
-          console.log("You clicked outside");
           setShowDropdown(false);
         }
       }
