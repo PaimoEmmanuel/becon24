@@ -11,7 +11,7 @@ const Banner = () => {
             A <span>7-day</span> life-changing event
           </p>
           <Countdown />
-          <p className="banner-date">AUGUST 18TH - 24TH, 2023</p>
+          <p className="banner-date">AUGUST 18TH - 24TH, 2024</p>
           <button className="banner-btn">Register now</button>
         </div>
         <CursorTransform />
