@@ -11,7 +11,7 @@
     @apply flex flex-wrap max-w-[37.0625rem] mx-auto overflow-hidden mt-8;
   }
   &-input {
-    @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] bg-[#FFFCF6] w-full rounded-lg border border-[#EEDFC2] h-[3.125rem];
+    @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] bg-[#FFFCF6] w-full rounded-lg border border-[#EEDFC2] focus:outline-none focus:border-black h-[3.125rem];
     &:first-child {
       @apply w-[13.4375rem] mb-4 sm:mb-0 sm:mr-4;
     }
