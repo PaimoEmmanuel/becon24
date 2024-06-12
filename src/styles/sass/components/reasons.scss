@@ -1,16 +1,10 @@
 .reasons {
   @apply overflow-x-hidden;
   &-heading {
-    @apply site-container text-lg sm:text-2xl sm:w-[37.375rem] font-black  text-center;
+    @apply site-container  lg:px-6 text-[2rem] leading-[1.9625rem] sm:text-[3.5rem] sm:leading-[3.375rem] font-black  text-center mb-8 sm:mb-[4.5rem];
     font-variation-settings: "wght" 870, "wdth" 132;
-  }
-  &-btn-grp {
-    @apply site-container flex gap-1 justify-center mt-8 mb-[3.75rem];
-    button {
-      @apply w-[7.375rem] h-[2.625rem];
-    }
-    .active {
-      @apply border-2 border-[#B88D38] rounded-full;
+    span {
+      @apply text-[#B88D38] lg:block;
     }
   }
   .testimony {
@@ -52,7 +46,7 @@
       @apply text-[2rem] sm:text-[3.5rem] text-white leading-[1.9625rem] sm:leading-[3.375rem] font-black w-fit;
       font-variation-settings: "wght" 870, "wdth" 132;
       span {
-        @apply text-[#B88D38];
+        @apply text-[#F4DBA8];
       }
     }
     &-text {
@@ -74,7 +68,7 @@
       @apply text-[2rem] sm:text-[3.5rem] text-white leading-[1.9625rem] sm:leading-[3.375rem] font-black w-fit text-center lg:text-left;
       font-variation-settings: "wght" 870, "wdth" 132;
       span {
-        @apply text-[#B88D38];
+        @apply text-[#F4DBA8];
       }
     }
     &-cards {

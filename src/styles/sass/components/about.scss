@@ -44,8 +44,14 @@
       &-date {
         @apply text-2xl font-bold;
       }
+      &-links {
+        @apply flex  mt-6 mx-auto lg:ml-10 lg:mr-0 items-center gap-2;
+      }
+      &-know {
+        @apply bg-black dark:bg-white text-white dark:text-black font-medium w-[9.75rem] h-10 flex justify-center items-center rounded-full;
+      }
       &-link {
-        @apply h-10 w-48 text-[#B88D38] justify-center gap-1 items-center bg-[#F5F1E7] rounded-full flex mt-6 mx-auto lg:ml-10 lg:mr-0;
+        @apply h-10 w-48 text-[#B88D38] justify-center gap-1 items-center bg-[#F5F1E7] rounded-full flex;
       }
       &-img-wrapper {
         @apply hidden lg:flex sticky top-0 h-screen items-center min-w-[50%];

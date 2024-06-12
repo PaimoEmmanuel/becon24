@@ -8,7 +8,7 @@
     font-variation-settings: "wght" 870, "wdth" 133;
   }
   &-form {
-    @apply flex flex-wrap max-w-[37.0625rem] mx-auto overflow-hidden mt-8;
+    @apply flex flex-wrap max-w-[50rem] mx-auto overflow-hidden mt-8;
   }
   &-input {
     @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] bg-[#FFFCF6] w-full rounded-lg border border-[#EEDFC2] focus:outline-none focus:border-black h-[3.125rem];
@@ -16,10 +16,10 @@
       @apply w-[13.4375rem] mb-4 sm:mb-0 sm:mr-4;
     }
     &:nth-child(2) {
-      @apply flex-1 rounded-r-none min-w-[17.5rem];
+      @apply flex-1 min-w-[17.5rem];
     }
   }
   &-btn {
-    @apply w-[3.75rem] flex bg-[#B88D38] justify-center items-center h-[3.125rem] rounded-r-lg;
+    @apply ml-4 w-[3.75rem] flex bg-black transition-all hover:bg-[#B88D38] justify-center items-center h-[3.125rem] rounded-lg;
   }
 }

@@ -1,5 +1,8 @@
 .question {
   @apply site-container flex justify-center lg:justify-between items-center;
+  &-container {
+    @apply bg-[#FFFCF6] py-28;
+  }
   &-title {
     @apply text-[2rem] sm:text-[3.5rem] font-black leading-[1.9625rem] sm:leading-[3.375rem] lg:w-1/2 mb-8 text-center lg:text-left;
     font-variation-settings: "wght" 870, "wdth" 133;

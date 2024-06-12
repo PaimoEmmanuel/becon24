@@ -5,7 +5,6 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef<HTMLParagraphElement>(null);
   useEffect(() => {
-    // const specifiedElement = document.getElementById("testDiv");
     document.addEventListener("click", function (event) {
       if (dropdownRef.current) {
         const isClickInside = dropdownRef.current.contains(

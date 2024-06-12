@@ -14,8 +14,8 @@ function App() {
       <Banner />
       <About />
       <Reasons />
-      <FAQs />
       <AnyQuestion />
+      <FAQs />
       <Newsletter />
       <Footer />
     </>

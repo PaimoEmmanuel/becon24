@@ -1354,10 +1354,44 @@ body {
   font-weight: 700;
 }
 
-.about-becon .target-link {
+.about-becon .target-links {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .about-becon .target-links {
+    margin-left: 2.5rem;
+    margin-right: 0px;
+  }
+}
+
+.about-becon .target-know {
+  display: flex;
+  height: 2.5rem;
+  width: 9.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.about-becon .target-know:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.about-becon .target-link {
   display: flex;
   height: 2.5rem;
   width: 12rem;
@@ -1369,13 +1403,6 @@ body {
   background-color: rgb(245 241 231 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(184 141 56 / var(--tw-text-opacity));
-}
-
-@media (min-width: 1024px) {
-  .about-becon .target-link {
-    margin-left: 2.5rem;
-    margin-right: 0px;
-  }
 }
 
 .about-becon .target-img-wrapper {
@@ -1413,10 +1440,11 @@ body {
 }
 
 .reasons-heading {
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 2rem;
   font-weight: 900;
+  line-height: 1.9625rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 80.375rem;
@@ -1440,9 +1468,16 @@ body {
 
 @media (min-width: 640px) {
   .reasons-heading {
-    width: 37.375rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    margin-bottom: 4.5rem;
+    font-size: 3.5rem;
+    line-height: 3.375rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .reasons-heading {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -1450,43 +1485,15 @@ body {
   font-variation-settings: "wght" 870, "wdth" 132;
 }
 
-.reasons-btn-grp {
-  margin-top: 2rem;
-  margin-bottom: 3.75rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.25rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80.375rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-@media (min-width: 640px) {
-  .reasons-btn-grp {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+.reasons-heading span {
+  --tw-text-opacity: 1;
+  color: rgb(184 141 56 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
-  .reasons-btn-grp {
-    padding-left: 6rem;
-    padding-right: 6rem;
+  .reasons-heading span {
+    display: block;
   }
-}
-
-.reasons-btn-grp button {
-  height: 2.625rem;
-  width: 7.375rem;
-}
-
-.reasons-btn-grp .active {
-  border-radius: 9999px;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(184 141 56 / var(--tw-border-opacity));
 }
 
 .reasons .testimony {
@@ -1664,7 +1671,7 @@ body {
 
 .reasons .previous-heading span {
   --tw-text-opacity: 1;
-  color: rgb(184 141 56 / var(--tw-text-opacity));
+  color: rgb(244 219 168 / var(--tw-text-opacity));
 }
 
 .reasons .previous-text {
@@ -1750,7 +1757,7 @@ body {
 
 .reasons .stream-heading span {
   --tw-text-opacity: 1;
-  color: rgb(184 141 56 / var(--tw-text-opacity));
+  color: rgb(244 219 168 / var(--tw-text-opacity));
 }
 
 .reasons .stream-cards {
@@ -2063,6 +2070,13 @@ body {
   }
 }
 
+.question-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 252 246 / var(--tw-bg-opacity));
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .question-title {
   margin-bottom: 2rem;
   text-align: center;
@@ -2210,7 +2224,7 @@ body {
   margin-right: auto;
   margin-top: 2rem;
   display: flex;
-  max-width: 37.0625rem;
+  max-width: 50rem;
   flex-wrap: wrap;
   overflow: hidden;
 }
@@ -2262,18 +2276,24 @@ body {
 .newsletter-input:nth-child(2) {
   min-width: 17.5rem;
   flex: 1 1 0%;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 .newsletter-btn {
+  margin-left: 1rem;
   display: flex;
   height: 3.125rem;
   width: 3.75rem;
   align-items: center;
   justify-content: center;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.newsletter-btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(184 141 56 / var(--tw-bg-opacity));
 }

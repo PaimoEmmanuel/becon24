@@ -12,7 +12,7 @@ const Newsletter = () => {
         <input
           className="newsletter-input"
           type="email"
-          placeholder="your email address"
+          placeholder="Your email address"
         />
         <button className="newsletter-btn">
           <svg

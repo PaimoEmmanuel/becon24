@@ -1,63 +1,30 @@
-import { useState } from "react";
 import Testimony from "./Testimony";
 import InfiniteScroll from "./InfiniteScroll";
 
-const testimonies = {
-  ministers: [
-    {
-      name: "Pst. John Fasanu’s Testimony",
-      content:
-        "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
-      image: "https://cowrywise.com/images/photos/home/wura.jpg",
-      video: "https://cowrywise.com/videos/wura.mp4",
-    },
-    {
-      name: "Pst. Jane Fasanu’s Testimony",
-      content:
-        "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
-      image: "https://cowrywise.com/images/photos/home/mayokun.jpg",
-      video: "https://cowrywise.com/videos/mayokun.mp4",
-    },
-  ],
-  participants: [
-    {
-      name: "Bro. John Fasuna’s Testimony",
-      content:
-        "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
-      image: "https://cowrywise.com/images/photos/home/wande.jpg",
-      video: "https://cowrywise.com/videos/wande.mp4",
-    },
-  ],
-};
+const testimonies = [
+  {
+    name: "Pst. John Fasanu’s Testimony",
+    content:
+      "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
+    image: "https://cowrywise.com/images/photos/home/wura.jpg",
+    video: "https://cowrywise.com/videos/wura.mp4",
+  },
+  {
+    name: "Pst. Jane Fasanu’s Testimony",
+    content:
+      "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
+    image: "https://cowrywise.com/images/photos/home/mayokun.jpg",
+    video: "https://cowrywise.com/videos/mayokun.mp4",
+  },
+];
 
 const Reasons = () => {
-  const [activeSection, setActiveSection] = useState<
-    "ministers" | "participants"
-  >("ministers");
   return (
     <div className="reasons">
       <h3 className="reasons-heading">
-        WHY YOU SHOULD ATTEND BELIEVERS’ CONVENTION?
+        WHY YOU SHOULD ATTEND <span>EGFM BELIEVERS’ CONVENTION?</span>
       </h3>
-      <div className="reasons-btn-grp">
-        <button
-          className={activeSection === "ministers" ? "active" : ""}
-          onClick={() => {
-            setActiveSection("ministers");
-          }}
-        >
-          Ministers
-        </button>
-        <button
-          className={activeSection === "participants" ? "active" : ""}
-          onClick={() => {
-            setActiveSection("participants");
-          }}
-        >
-          Participants
-        </button>
-      </div>
-      <Testimony key={activeSection} testimonies={testimonies[activeSection]} />
+      <Testimony testimonies={testimonies} />
       <div className="bg-[#000000]">
         <div className="previous">
           <h4 className="previous-heading">
@@ -171,7 +138,7 @@ const Reasons = () => {
       <div className="bg-[#000000]">
         <div className="stream">
           <h4 className="stream-heading">
-            STREAM <span>BECON 24 NOW</span>
+            <span> BECON 24 </span>STREAMING PLATFORMS
           </h4>
           <div className="stream-cards">
             <div className="stream-card">
