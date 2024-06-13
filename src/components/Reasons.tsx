@@ -18,6 +18,16 @@ const testimonies = [
   },
 ];
 
+const streamingPlatforms = [
+  { title: "WAYSTREAM", image: "/waystream-lg.png", link: "waystream.com" },
+  { title: "FOUNTAIN STREAM", image: "/fs-lg.png", link: "fountainstream.com" },
+  { title: "MIXLR", image: "/mixlr-lg.png", link: "egfmfountain.mixlr.com" },
+  {
+    title: "YOUTUBE",
+    image: "/youtube-lg.png",
+    link: "youtube.com/@egfmfountain",
+  },
+];
 const Reasons = () => {
   return (
     <div className="reasons">
@@ -141,32 +151,22 @@ const Reasons = () => {
             <span> BECON 24 </span>STREAMING PLATFORMS
           </h4>
           <div className="stream-cards">
-            <div className="stream-card">
-              <img className="stream-icon" src="/mixlr.png" alt="USE MIXLR" />
-              <p className="stream-text">STREAM ON MIXLR</p>
-              <a
-                className="stream-link"
-                href="https://egfmfountain.mixlr.com/"
-                target="_blank"
+            {streamingPlatforms.map((platform, index) => (
+              <div
+                className={index > 0 ? `stream-card` : "stream-card"}
+                key={platform.title}
               >
-                USE MIXLR <span>→</span>
-              </a>
-            </div>
-            <div className="stream-card">
-              <img
-                className="stream-icon"
-                src="/youtube.png"
-                alt="USE YOUTUBE"
-              />
-              <p className="stream-text">STREAM ON YOUTUBE</p>
-              <a
-                className="stream-link"
-                href="https://www.youtube.com/egfmfountain"
-                target="_blank"
-              >
-                USE YOUTUBE <span>→</span>
-              </a>
-            </div>
+                <img
+                  className="stream-icon"
+                  src={platform.image}
+                  alt="USE MIXLR"
+                />
+                <p className="stream-text">{platform.title}</p>
+                <a className="stream-link" href={platform.link} target="_blank">
+                  visit platform <span>→</span>
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>

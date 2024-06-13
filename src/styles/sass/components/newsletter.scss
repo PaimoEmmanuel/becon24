@@ -20,6 +20,6 @@
     }
   }
   &-btn {
-    @apply ml-4 w-[3.75rem] flex bg-black transition-all hover:bg-[#B88D38] justify-center items-center h-[3.125rem] rounded-lg;
+    @apply sm:ml-4 mt-4 sm:mt-0 w-[3.75rem] flex bg-black transition-all hover:bg-[#B88D38] justify-center items-center h-[3.125rem] rounded-lg;
   }
 }

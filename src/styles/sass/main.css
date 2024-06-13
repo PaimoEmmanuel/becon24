@@ -349,7 +349,7 @@ body {
   @apply absolute left-0 -bottom-96;
 }
 .reasons .stream {
-  @apply site-container flex flex-col lg:flex-row gap-[5.75rem] pt-[8.625rem] pb-[9.625rem] relative z-10;
+  @apply site-container flex flex-col xl:flex-row gap-[5.75rem] pt-[8.625rem] pb-[9.625rem] relative z-10;
 }
 .reasons .stream-heading {
   @apply text-[2rem] sm:text-[3.5rem] text-white leading-[1.9625rem] sm:leading-[3.375rem] font-black w-fit text-center lg:text-left;
@@ -359,17 +359,26 @@ body {
   @apply text-[#F4DBA8];
 }
 .reasons .stream-cards {
-  @apply flex flex-wrap lg:flex-nowrap gap-8 justify-center;
+  @apply flex flex-col xl:flex-row justify-center gap-6 sm:gap-0 lg:max-w-[33.875rem] lg:min-w-[33.875rem];
 }
 .reasons .stream-card {
-  @apply bg-[#292929] text-white w-[15.5rem] sm:h-[16.25rem] px-6 py-8 rounded-lg;
+  @apply -ml-8;
+}
+.reasons .stream-card:first-child {
+  @apply mt-[0.625rem] ml-0;
+}
+.reasons .stream-card:first-child img {
+  @apply xl:w-[9.25rem];
+}
+.reasons .stream-icon {
+  @apply w-full max-w-52 mx-auto;
 }
 .reasons .stream-text {
-  @apply text-lg sm:text-2xl font-black mt-6 mb-8 leading-[1.875rem];
+  @apply text-xs text-white font-black sm:mt-6 mb-2 text-center leading-4 max-w-[152px] mx-auto;
   font-variation-settings: "wght" 870, "wdth" 132;
 }
 .reasons .stream-link {
-  @apply text-sm font-medium flex w-full h-10 bg-[#ED1C24] hover:bg-[#CF0006] transition-all justify-between px-8 items-center rounded-lg;
+  @apply text-white bg-[#F4DBA84D] rounded-full flex justify-between px-4 h-5 items-center text-xs w-32 mx-auto;
 }
 
 :root {
@@ -515,7 +524,7 @@ body {
   @apply flex-1 min-w-[17.5rem];
 }
 .newsletter-btn {
-  @apply ml-4 w-[3.75rem] flex bg-black transition-all hover:bg-[#B88D38] justify-center items-center h-[3.125rem] rounded-lg;
+  @apply sm:ml-4 mt-4 sm:mt-0 w-[3.75rem] flex bg-black transition-all hover:bg-[#B88D38] justify-center items-center h-[3.125rem] rounded-lg;
 }
 
 .footer {
