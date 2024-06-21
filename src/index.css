@@ -1096,6 +1096,8 @@ body {
 
 .scroller {
   max-width: 100vw;
+  position: relative;
+  z-index: 2;
 }
 
 .scroller__inner {
@@ -1125,7 +1127,7 @@ body {
 }
 
 .scroller[data-speed=fast] {
-  --_animation-duration: 20s;
+  --_animation-duration: 40s;
 }
 
 .scroller[data-speed=slow] {
@@ -1142,10 +1144,6 @@ body {
   margin: 0;
   padding-inline: 0;
   list-style: none;
-}
-
-.tag-list li {
-  width: 89rem;
 }
 
 /* for testing purposed to ensure the animation lined up correctly */
@@ -1867,85 +1865,42 @@ body {
   justify-content: space-around;
 }
 
-:root {
-  --dark: #373349;
-  --gap: 15px;
-  --width: 224px;
-  --height: var(--width);
-}
+/* Main CSS */
 
-.image-grid > div {
-  position: relative;
+.grid-wrapper > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  overflow: hidden;
 }
 
-.image-grid > div::after {
-  content: "";
-  background: linear-gradient(transparent, black);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: translateY(100%);
-  transition-duration: 0.75s;
-}
-
-.image-grid > div:hover::after {
-  transform: translateY(50%);
-}
-
-.image-grid > div > * {
+.grid-wrapper > div > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 4px;
-  transition-duration: 1s;
+  border-radius: 5px;
 }
 
-.image-grid > div:hover > img {
-  transform: scale(1.05);
-}
-
-.image-grid {
+.grid-wrapper {
   display: grid;
-  grid-gap: var(--gap);
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+  grid-auto-rows: 260px;
   grid-auto-flow: dense;
-  position: relative;
   z-index: 2;
-  grid-template-columns: repeat(auto-fit,minmax(8.875rem,1fr));
+  position: relative;
+  width: 280rem;
 }
 
-@media (min-width: 640px) {
-  .image-grid {
-    grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
-  }
-}
-
-.image-grid {
-  grid-auto-rows: 8.875rem;
-}
-
-@media (min-width: 640px) {
-  .image-grid {
-    grid-auto-rows: 14rem;
-  }
-}
-
-.horizontal {
+.grid-wrapper .wide {
   grid-column: span 2;
 }
 
-.vertical {
+.grid-wrapper .tall {
   grid-row: span 2;
 }
 
-.big {
+.grid-wrapper .big {
   grid-column: span 2;
   grid-row: span 2;
 }

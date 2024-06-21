@@ -1,70 +1,33 @@
-:root {
-  --dark: #373349;
-  --gap: 15px;
-  --width: 224px;
-  --height: var(--width);
-}
-
-.image-grid > div {
-  position: relative;
+/* Main CSS */
+.grid-wrapper > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
-  overflow: hidden;
 }
-
-.image-grid > div::after {
-  content: "";
-  background: linear-gradient(transparent, black);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: translateY(100%);
-  transition-duration: 0.75s;
-}
-
-.image-grid > div:hover::after {
-  transform: translateY(50%);
-}
-
-.image-grid > div > * {
+.grid-wrapper > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
-  transition-duration: 1s;
+  border-radius: 5px;
 }
 
-.image-grid > div:hover > img {
-  transform: scale(1.05);
-}
-
-.image-grid {
+.grid-wrapper {
   display: grid;
-  grid-gap: var(--gap);
-  // grid-template-columns: repeat(auto-fit, minmax(var(--width), 1fr));
-  // grid-auto-rows: var(--height);
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(354px, 1fr));
+  grid-auto-rows: 260px;
   grid-auto-flow: dense;
-  position: relative;
   z-index: 2;
-  // @apply grid-cols-12;
-  @apply grid-cols-[repeat(auto-fit,minmax(8.875rem,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(14rem,1fr))];
-  @apply auto-rows-[8.875rem] sm:auto-rows-[14rem];
-  // 142px
+  position: relative;
+  width: 280rem;
 }
-
-.horizontal {
+.grid-wrapper .wide {
   grid-column: span 2;
 }
-
-.vertical {
+.grid-wrapper .tall {
   grid-row: span 2;
 }
-
-.big {
+.grid-wrapper .big {
   grid-column: span 2;
   grid-row: span 2;
 }

@@ -1,5 +1,7 @@
 .scroller {
   max-width: 100vw;
+  position: relative;
+  z-index: 2;
 }
 
 .scroller__inner {
@@ -29,7 +31,7 @@
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 20s;
+  --_animation-duration: 40s;
 }
 
 .scroller[data-speed="slow"] {
@@ -47,7 +49,7 @@
   padding-inline: 0;
   list-style: none;
   li {
-    width: 89rem;
+    // width: 89rem;
   }
 }
 

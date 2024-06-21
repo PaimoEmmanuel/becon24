@@ -1,38 +1,34 @@
 const images = [
-  { src: "/grid-1.png", className: "" },
-  { src: "/grid-2.png", className: "vertical" },
-  { src: "/grid-3.png", className: "" },
-  { src: "/grid-4.png", className: "vertical" },
-  { src: "/grid-5.png", className: "" },
-  { src: "/grid-6.png", className: "vertical" },
-  { src: "/grid-7.png", className: "" },
-  { src: "/grid-8.png", className: "vertical" },
-  { src: "/grid-9.png", className: "" },
-  { src: "/grid-10.png", className: "vertical" },
-  { src: "/grid-11.png", className: "" },
-  { src: "/grid-12.png", className: "vertical" },
-  { src: "/grid-13.png", className: "" },
-  { src: "/grid-14.png", className: "vertical" },
-  { src: "/grid-15.png", className: "" },
-  { src: "/grid-16.png", className: "vertical" },
-  { src: "/grid-17.png", className: "" },
-  { src: "/grid-18.png", className: "vertical" },
-  { src: "/grid-19.png", className: "" },
-  { src: "/grid-20.png", className: "vertical" },
-  { src: "/grid-21.png", className: "" },
-  { src: "/grid-22.png", className: "vertical" },
-  { src: "/grid-23.png", className: "" },
-  { src: "/grid-24.png", className: "vertical" },
+  { src: "/grid-1.png", classNameName: "" },
+  { src: "/grid-2.png", classNameName: "tall" },
+  { src: "/grid-3.png", classNameName: "" },
+  { src: "/grid-4.png", classNameName: "tall" },
+  { src: "/grid-5.png", classNameName: "" },
+  { src: "/grid-6.png", classNameName: "tall" },
+  { src: "/grid-7.png", classNameName: "" },
+  { src: "/grid-8.png", classNameName: "tall" },
+  { src: "/grid-9.png", classNameName: "" },
+  { src: "/grid-10.png", classNameName: "tall" },
+  { src: "/grid-11.png", classNameName: "" },
+  { src: "/grid-12.png", classNameName: "tall" },
+  { src: "/grid-13.png", classNameName: "tall" },
+  { src: "/grid-15.png", classNameName: "tall" },
+  { src: "/grid-17.png", classNameName: "tall" },
+  { src: "/grid-19.png", classNameName: "tall" },
+  { src: "/grid-21.png", classNameName: "tall" },
+  { src: "/grid-23.png", classNameName: "tall" },
+  { src: "/grid-14.png", classNameName: "" },
+  { src: "/grid-16.png", classNameName: "" },
+  { src: "/grid-18.png", classNameName: "" },
+  { src: "/grid-20.png", classNameName: "" },
+  { src: "/grid-22.png", classNameName: "" },
+  { src: "/grid-24.png", classNameName: "" },
 ];
 const ImageGrid = () => (
-  <div className="image-grid slide-track">
-    {images.map((image, index) => (
-      <div
-        key={image.src + index}
-        data-lightbox="homePortfolio"
-        className={image.className + " slide"}
-      >
-        <img src={image.src} />
+  <div className="grid-wrapper">
+    {images.map((image) => (
+      <div key={image.src} className={image.classNameName}>
+        <img src={image.src} alt="" />
       </div>
     ))}
   </div>
