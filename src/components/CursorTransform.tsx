@@ -4,7 +4,9 @@ const CursorTransform: React.FC = () => {
   useEffect(() => {
     const constrain = 40;
     const mouseOverContainer = document.getElementById("banner-container");
-    const ex1Layer = document.getElementById("ex1-layer");
+    const ex1Layers = document.querySelectorAll(
+      ".ex1-layer"
+    ) as NodeListOf<HTMLElement>;
 
     function transforms(x: number, y: number, el: HTMLElement | null) {
       if (!el) return;
@@ -38,14 +40,21 @@ const CursorTransform: React.FC = () => {
         const position = xy;
 
         window.requestAnimationFrame(function () {
-          transformElement(ex1Layer, position, ex1Layer);
+          transformElement(ex1Layers[0], position, ex1Layers[0]);
+          transformElement(ex1Layers[1], position, ex1Layers[1]);
+          transformElement(ex1Layers[2], position, ex1Layers[2]);
+          transformElement(ex1Layers[3], position, ex1Layers[3]);
         });
       };
     }
   }, []);
   return (
     <div id="ex1" className="cursor-transform banner-img">
-      <img id="ex1-layer" src="/banner.png" alt="Becon 2 s024" />
+      <img className="ex1-layer" src="/banner.png" alt="Becon 2024" />
+      <img className="ex1-layer" src="/banner-2.png" alt="Becon 2024" />
+      <img className="ex1-layer" src="/banner-3.png" alt="Becon 2024" />
+      <img className="ex1-layer" src="/banner-4.png" alt="Becon 2024" />
+      <img style={{ opacity: 0 }} src="/banner.png" alt="Becon 2024" />
     </div>
   );
 };

@@ -8,7 +8,7 @@
     font-variation-settings: "wght" 870, "wdth" 133;
   }
   &-form {
-    @apply flex flex-wrap max-w-[50rem] mx-auto overflow-hidden mt-8;
+    @apply flex flex-col sm:flex-row sm:flex-wrap max-w-[50rem] mx-auto overflow-hidden mt-8;
   }
   &-input {
     @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] bg-[#FFFCF6] w-full rounded-lg border border-[#EEDFC2] focus:outline-none focus:border-black h-[3.125rem];
@@ -16,7 +16,7 @@
       @apply w-[13.4375rem] mb-4 sm:mb-0 sm:mr-4;
     }
     &:nth-child(2) {
-      @apply flex-1 min-w-[17.5rem];
+      @apply sm:flex-1 min-w-[17.5rem];
     }
   }
   &-btn {

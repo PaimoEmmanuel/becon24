@@ -14,7 +14,28 @@
     }
   }
   &-img {
-    @apply min-w-full lg:min-w-[50%] lg:max-w-[50%] transition-all;
+    @apply min-w-full lg:min-w-[50%] lg:max-w-[50%] transition-all relative;
+    .ex1-layer {
+      position: absolute;
+      left: 0;
+      top: 0;
+      animation-name: fade;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 8s;
+      &:nth-of-type(1) {
+        animation-delay: 6s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 2s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: 0s;
+      }
+    }
   }
   &-date {
     @apply tracking-[0.2875rem] mt-4 mb-8;
@@ -22,5 +43,23 @@
   &-btn {
     @apply w-[280px] h-[50px] bg-black hover:bg-[#B88D38] transition-all rounded-lg flex justify-center items-center text-white font-medium;
     @apply mx-auto lg:mx-0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
