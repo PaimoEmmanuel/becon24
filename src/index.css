@@ -742,9 +742,7 @@ body {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 @media (min-width: 1024px) {
@@ -786,6 +784,8 @@ body {
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: all;
@@ -1196,8 +1196,8 @@ body {
 .about-container {
   background: linear-gradient(180deg, #fffcf7 0%, rgba(255, 252, 247, 0) 100%);
   margin-top: 3rem;
-  padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+  padding-top: 5.5rem;
 }
 
 .about-heading {
@@ -1371,17 +1371,16 @@ body {
 }
 
 .about-becon .target-know {
-  display: flex;
   height: 2.5rem;
   width: 9.75rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .about-becon .target-know:where(.dark, .dark *) {
@@ -1389,6 +1388,18 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.about-becon .target-know {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+}
+
+.about-becon .target-know:hover {
+  gap: 0.25rem;
 }
 
 .about-becon .target-link {
@@ -1598,22 +1609,17 @@ body {
   }
 }
 
-.reasons .testimony-img video {
+.reasons .testimony-img img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 640px) {
-  .reasons .testimony-img video {
+  .reasons .testimony-img img {
     max-height: 33.5rem;
   }
-}
-
-.reasons .testimony-play {
-  position: absolute;
-  right: 2.25rem;
-  top: 2rem;
-  z-index: 10;
 }
 
 .reasons .previous {
@@ -1837,8 +1843,6 @@ body {
 }
 
 .reasons .stream-link {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   height: 1.25rem;
   width: 8rem;
@@ -1852,6 +1856,15 @@ body {
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  margin-left: auto;
+  margin-right: auto;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.reasons .stream-link:hover {
+  justify-content: space-around;
 }
 
 :root {
@@ -1905,14 +1918,22 @@ body {
   grid-auto-flow: dense;
   position: relative;
   z-index: 2;
-  grid-auto-rows: 8.875rem;
   grid-template-columns: repeat(auto-fit,minmax(8.875rem,1fr));
 }
 
 @media (min-width: 640px) {
   .image-grid {
-    grid-auto-rows: 14rem;
     grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+  }
+}
+
+.image-grid {
+  grid-auto-rows: 8.875rem;
+}
+
+@media (min-width: 640px) {
+  .image-grid {
+    grid-auto-rows: 14rem;
   }
 }
 

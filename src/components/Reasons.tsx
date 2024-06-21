@@ -3,18 +3,28 @@ import InfiniteScroll from "./InfiniteScroll";
 
 const testimonies = [
   {
-    name: "Pst. John Fasanu’s Testimony",
+    name: "Pst. Kolade’s Testimony",
     content:
-      "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
-    image: "https://cowrywise.com/images/photos/home/wura.jpg",
-    video: "https://cowrywise.com/videos/wura.mp4",
+      "I knew about the Ministry during my undergraduate years and got to know about Believers Convention. I remember my first BECON experience, it was in 2009, and the theme was “The Blessing”. <br><br> I invited my fiancée (now my wife) to attend the convention, and we were truly blessed. The understanding of what the Blessing of God really is became clear to us, and on the last day of the Convention, we both concluded that we would follow the message(Word of Righteousness). <br><br> I am thankful to God for more understanding that has come to me and my wife over the years and for how far we have both  journeyed together in light. <br><br> It’s been over a decade since we both attended our first convention, and we are eternally grateful to God for the fountain that never runs dry as we continue to enjoy God in every season of our lives.",
+    image: "/pst-kolade.png",
   },
   {
-    name: "Pst. Jane Fasanu’s Testimony",
+    name: "Mummy Omilana's Testimony",
     content:
       "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
-    image: "https://cowrywise.com/images/photos/home/mayokun.jpg",
-    video: "https://cowrywise.com/videos/mayokun.mp4",
+    image: "/mummy-leke.png",
+  },
+  {
+    name: "Sis Omosehin Juliana's Testimony",
+    content:
+      "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
+    image: "/sis-juliana.png",
+  },
+  {
+    name: "Bro Leye's Testimony",
+    content:
+      "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
+    image: "/bro-leye.png",
   },
 ];
 

@@ -5,7 +5,7 @@
       #fffcf7 0%,
       rgba(255, 252, 247, 0) 100%
     );
-    @apply mt-12 py-[4.5rem];
+    @apply mt-12 pb-[4.5rem] pt-[5.5rem];
   }
   @apply site-container flex flex-col lg:flex-row gap-8 sm:gap-20 text-center lg:text-left;
   &-heading {
@@ -48,7 +48,8 @@
         @apply flex  mt-6 mx-auto lg:ml-10 lg:mr-0 items-center gap-2;
       }
       &-know {
-        @apply bg-black dark:bg-white text-white dark:text-black font-medium w-[9.75rem] h-10 flex justify-center items-center rounded-full;
+        @apply bg-black dark:bg-white text-white dark:text-black font-medium w-[9.75rem] h-10 transition-all;
+        @apply flex justify-center items-center rounded-full gap-2 hover:gap-1;
       }
       &-link {
         @apply h-10 w-48 text-[#B88D38] justify-center gap-1 items-center bg-[#F5F1E7] rounded-full flex;

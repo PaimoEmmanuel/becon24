@@ -50,7 +50,9 @@
   grid-auto-flow: dense;
   position: relative;
   z-index: 2;
-  @apply grid-cols-[repeat(auto-fit,minmax(8.875rem,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] auto-rows-[8.875rem] sm:auto-rows-[14rem];
+  // @apply grid-cols-12;
+  @apply grid-cols-[repeat(auto-fit,minmax(8.875rem,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(14rem,1fr))];
+  @apply auto-rows-[8.875rem] sm:auto-rows-[14rem];
   // 142px
 }
 

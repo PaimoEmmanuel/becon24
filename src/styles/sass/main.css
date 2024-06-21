@@ -74,7 +74,7 @@ body {
   @apply lg:hidden ml-auto;
 }
 .nav-wrap {
-  @apply hidden lg:flex w-full justify-between items-center text-sm font-medium;
+  @apply hidden lg:flex w-full justify-between items-center font-bold;
 }
 .nav-links {
   @apply flex gap-8 items-center;
@@ -89,7 +89,7 @@ body {
   @apply flex gap-4 items-center cursor-pointer;
 }
 .nav-button {
-  @apply w-[9.5rem] bg-black dark:bg-white hover:bg-[#B88D38] transition-all text-white dark:text-black flex items-center justify-center h-10 rounded-lg;
+  @apply w-[9.5rem] text-sm bg-black dark:bg-white hover:bg-[#B88D38] transition-all text-white dark:text-black flex items-center justify-center h-10 rounded-lg;
 }
 .nav .socials {
   @apply absolute flex w-[21rem] gap-6 top-12 z-10 rounded-lg -left-40 bg-white dark:bg-black duration-[.3s] opacity-0 transform -translate-x-6;
@@ -224,7 +224,7 @@ body {
 }
 .about-container {
   background: linear-gradient(180deg, #fffcf7 0%, rgba(255, 252, 247, 0) 100%);
-  @apply mt-12 py-[4.5rem];
+  @apply mt-12 pb-[4.5rem] pt-[5.5rem];
 }
 .about-heading {
   @apply text-[2rem] leading-[1.9625rem] sm:text-[3.5rem] font-black sm:leading-[3.375rem] w-fit;
@@ -268,7 +268,8 @@ body {
   @apply flex  mt-6 mx-auto lg:ml-10 lg:mr-0 items-center gap-2;
 }
 .about-becon .target-know {
-  @apply bg-black dark:bg-white text-white dark:text-black font-medium w-[9.75rem] h-10 flex justify-center items-center rounded-full;
+  @apply bg-black dark:bg-white text-white dark:text-black font-medium w-[9.75rem] h-10 transition-all;
+  @apply flex justify-center items-center rounded-full gap-2 hover:gap-1;
 }
 .about-becon .target-link {
   @apply h-10 w-48 text-[#B88D38] justify-center gap-1 items-center bg-[#F5F1E7] rounded-full flex;
@@ -320,11 +321,8 @@ body {
 .reasons .testimony-img {
   @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[33.5rem];
 }
-.reasons .testimony-img video {
-  @apply w-full h-full sm:max-h-[33.5rem];
-}
-.reasons .testimony-play {
-  @apply absolute right-9 top-8 z-10;
+.reasons .testimony-img img {
+  @apply w-full h-full sm:max-h-[33.5rem] object-cover;
 }
 .reasons .previous {
   @apply site-container flex flex-col lg:flex-row gap-[5.75rem] pt-28 lg:pt-[13.25rem]  relative z-10 text-center lg:text-left;
@@ -378,7 +376,8 @@ body {
   font-variation-settings: "wght" 870, "wdth" 132;
 }
 .reasons .stream-link {
-  @apply text-white bg-[#F4DBA84D] rounded-full flex justify-between px-4 h-5 items-center text-xs w-32 mx-auto;
+  @apply text-white bg-[#F4DBA84D] rounded-full flex justify-between px-4 h-5 items-center text-xs w-32;
+  @apply mx-auto transition-all hover:justify-around;
 }
 
 :root {
@@ -431,7 +430,8 @@ body {
   grid-auto-flow: dense;
   position: relative;
   z-index: 2;
-  @apply grid-cols-[repeat(auto-fit,minmax(8.875rem,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(14rem,1fr))] auto-rows-[8.875rem] sm:auto-rows-[14rem];
+  @apply grid-cols-[repeat(auto-fit,minmax(8.875rem,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(14rem,1fr))];
+  @apply auto-rows-[8.875rem] sm:auto-rows-[14rem];
 }
 
 .horizontal {

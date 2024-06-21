@@ -65,7 +65,7 @@ const About = () => {
     document.addEventListener("scroll", handleScrollOne);
   }, []);
   return (
-    <div className="about-container">
+    <div id="about-becon" className="about-container">
       <div className="about">
         <h2 className="about-heading">
           ABOUT <span>EGFM BELIEVERS’ CONVENTION</span>
@@ -103,7 +103,7 @@ const About = () => {
                     href="https://www.egfm.org/ministries/believers-convention"
                     target="_blank"
                   >
-                    Know more →
+                    Know more <span>→</span>
                   </a>
                   <a className="target-link" href="">
                     Add to calender

@@ -32,12 +32,9 @@
     }
     &-img {
       @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[33.5rem];
-      video {
-        @apply w-full h-full sm:max-h-[33.5rem];
+      img {
+        @apply w-full h-full sm:max-h-[33.5rem] object-cover;
       }
-    }
-    &-play {
-      @apply absolute right-9 top-8 z-10;
     }
   }
   .previous {
@@ -94,8 +91,8 @@
       font-variation-settings: "wght" 870, "wdth" 132;
     }
     &-link {
-      @apply text-white bg-[#F4DBA84D] rounded-full flex justify-between px-4 h-5 items-center text-xs w-32 mx-auto;
-      // text-sm font-medium flex w-full h-10 bg-[#ED1C24] hover:bg-[#CF0006] transition-all justify-between px-8 items-center rounded-lg;
+      @apply text-white bg-[#F4DBA84D] rounded-full flex justify-between px-4 h-5 items-center text-xs w-32;
+      @apply mx-auto transition-all hover:justify-around;
     }
   }
 }

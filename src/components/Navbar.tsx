@@ -58,10 +58,13 @@ const Navbar = () => {
         <div className="nav-wrap">
           <ul className="nav-links">
             <li>
+              <a href="#about-becon">About BECON</a>
+            </li>
+            <li>
               <a href="https://www.egfm.org/about-us">About EGFM</a>
             </li>
             <li>
-              <a href="#faqs">FAQ</a>
+              <a href="#faqs">FAQs</a>
             </li>
           </ul>
           <div className="nav-details">

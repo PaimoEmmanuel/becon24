@@ -8,7 +8,7 @@
     @apply lg:hidden ml-auto;
   }
   &-wrap {
-    @apply hidden lg:flex w-full justify-between items-center text-sm font-medium;
+    @apply hidden lg:flex w-full justify-between items-center font-bold;
   }
   &-links {
     @apply flex gap-8 items-center;
@@ -23,7 +23,7 @@
     @apply flex gap-4 items-center cursor-pointer;
   }
   &-button {
-    @apply w-[9.5rem] bg-black dark:bg-white hover:bg-[#B88D38] transition-all text-white dark:text-black flex items-center justify-center h-10 rounded-lg;
+    @apply w-[9.5rem] text-sm bg-black dark:bg-white hover:bg-[#B88D38] transition-all text-white dark:text-black flex items-center justify-center h-10 rounded-lg;
   }
   .socials {
     @apply absolute flex w-[21rem] gap-6 top-12 z-10 rounded-lg -left-40 bg-white dark:bg-black duration-[.3s] opacity-0 transform -translate-x-6;
