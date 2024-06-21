@@ -29,13 +29,25 @@ const testimonies = [
 ];
 
 const streamingPlatforms = [
-  { title: "WAYSTREAM", image: "/waystream-lg.png", link: "waystream.com" },
-  { title: "FOUNTAIN STREAM", image: "/fs-lg.png", link: "fountainstream.com" },
-  { title: "MIXLR", image: "/mixlr-lg.png", link: "egfmfountain.mixlr.com" },
+  {
+    title: "WAYSTREAM",
+    image: "/waystream-lg.png",
+    link: "https://waystre.am/live/egfmfountain",
+  },
+  {
+    title: "FOUNTAIN STREAM",
+    image: "/fs-lg.png",
+    link: "https://fountainstream.com",
+  },
+  {
+    title: "MIXLR",
+    image: "/mixlr-lg.png",
+    link: "https://egfmfountain.mixlr.com",
+  },
   {
     title: "YOUTUBE",
     image: "/youtube-lg.png",
-    link: "youtube.com/@egfmfountain",
+    link: "https://youtube.com/egfmfountain",
   },
 ];
 const Reasons = () => {

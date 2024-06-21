@@ -1402,10 +1402,13 @@ body {
 }
 
 .about-becon .target-links {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5rem;
   display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
   align-items: center;
   gap: 0.5rem;
 }
@@ -1415,6 +1418,17 @@ body {
     margin-left: 2.5rem;
     margin-right: 0px;
   }
+}
+
+.about-becon .target-links add-to-calendar-button {
+  position: absolute !important;
+  right: 0 !important;
+  opacity: 0 !important;
+  width: 12rem;
+}
+
+.about-becon .target-links add-to-calendar-button:hover {
+  opacity: 1 !important;
 }
 
 .about-becon .target-know {

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { AddToCalendarButton } from "add-to-calendar-button-react";
 
 function isElementInViewport(el: Element, topValue: number) {
   const rect = el.getBoundingClientRect();
@@ -105,6 +106,22 @@ const About = () => {
                   >
                     Know more <span>→</span>
                   </a>
+                  <AddToCalendarButton
+                    name="EGFM Believers Convention"
+                    options={[
+                      "Apple",
+                      "Google",
+                      "Outlook.com",
+                      "Microsoft365",
+                      "MicrosoftTeams",
+                    ]}
+                    location="Faith Plaza, Bariga, Lagos"
+                    startDate="2024-08-18"
+                    endDate="2024-08-24"
+                    startTime="18:00"
+                    endTime="23:30"
+                    timeZone="America/Los_Angeles"
+                  ></AddToCalendarButton>
                   <a className="target-link" href="">
                     Add to calender
                     <svg

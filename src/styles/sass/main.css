@@ -301,7 +301,16 @@ body {
   @apply text-2xl font-bold;
 }
 .about-becon .target-links {
-  @apply flex  mt-6 mx-auto lg:ml-10 lg:mr-0 items-center gap-2;
+  @apply flex  mt-6 mx-auto lg:ml-10 lg:mr-0 items-center gap-2 relative w-fit;
+}
+.about-becon .target-links add-to-calendar-button {
+  position: absolute !important;
+  right: 0 !important;
+  opacity: 0 !important;
+  width: 12rem;
+}
+.about-becon .target-links add-to-calendar-button:hover {
+  opacity: 1 !important;
 }
 .about-becon .target-know {
   @apply bg-black dark:bg-white text-white dark:text-black font-medium w-[9.75rem] h-10 transition-all;
