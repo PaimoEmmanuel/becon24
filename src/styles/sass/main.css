@@ -364,10 +364,10 @@ body {
   @apply border-[3px] border-[#F1C670] opacity-100;
 }
 .reasons .testimony-img {
-  @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[33.5rem];
+  @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[40.5rem];
 }
 .reasons .testimony-img img {
-  @apply w-full h-full sm:max-h-[33.5rem] object-cover;
+  @apply w-full h-full object-cover;
 }
 .reasons .previous {
   @apply site-container flex flex-col lg:flex-row gap-[5.75rem] pt-28 lg:pt-[13.25rem]  relative z-10 text-center lg:text-left;

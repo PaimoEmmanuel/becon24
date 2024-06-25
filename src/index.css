@@ -1660,7 +1660,7 @@ body {
 
 @media (min-width: 640px) {
   .reasons .testimony-img {
-    max-height: 33.5rem;
+    max-height: 40.5rem;
   }
 }
 
@@ -1675,12 +1675,6 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (min-width: 640px) {
-  .reasons .testimony-img img {
-    max-height: 33.5rem;
-  }
 }
 
 .reasons .previous {

@@ -7,24 +7,28 @@ const testimonies = [
     content:
       "I knew about the Ministry during my undergraduate years and got to know about Believers Convention. I remember my first BECON experience, it was in 2009, and the theme was “The Blessing”. <br><br> I invited my fiancée (now my wife) to attend the convention, and we were truly blessed. The understanding of what the Blessing of God really is became clear to us, and on the last day of the Convention, we both concluded that we would follow the message(Word of Righteousness). <br><br> I am thankful to God for more understanding that has come to me and my wife over the years and for how far we have both  journeyed together in light. <br><br> It’s been over a decade since we both attended our first convention, and we are eternally grateful to God for the fountain that never runs dry as we continue to enjoy God in every season of our lives.",
     image: "/pst-kolade.png",
+    grayImage: "/pst-kolade-grey.png",
   },
   {
     name: "Mummy Omilana's Testimony",
     content:
       "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
     image: "/mummy-leke.png",
+    grayImage: "/mummy-leke-grey.png",
   },
   {
     name: "Sis Omosehin Juliana's Testimony",
     content:
       "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
     image: "/sis-juliana.png",
+    grayImage: "/sis-juliana-grey.png",
   },
   {
     name: "Bro Leye's Testimony",
     content:
       "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br> <br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren. <br><br> Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
     image: "/bro-leye.png",
+    grayImage: "/bro-leye-grey.png",
   },
 ];
 
@@ -63,7 +67,7 @@ const Reasons = () => {
             PREVIOUSLY ON <span>EGFM BELIEVERS’ CONVENTION</span>
           </h4>
           <div className="previous-text">
-            <p>9 years and on…</p> <br />
+            <p>10 years and on…</p> <br />
             <p>
               Season after season, through the revelation of the divine
               mysteries, Believers' Convention has become even more beautiful as

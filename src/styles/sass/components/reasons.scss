@@ -31,9 +31,9 @@
       }
     }
     &-img {
-      @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[33.5rem];
+      @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[40.5rem];
       img {
-        @apply w-full h-full sm:max-h-[33.5rem] object-cover;
+        @apply w-full h-full object-cover;
       }
     }
   }

@@ -5,6 +5,7 @@ interface TestimonyProps {
     name: string;
     content: string;
     image: string;
+    grayImage: string;
   }[];
 }
 
@@ -41,7 +42,7 @@ const Testimony = ({ testimonies }: TestimonyProps) => {
         </div>
         <div className="testimony-img">
           <img
-            src={testimonies[currentTestimony].image}
+            src={testimonies[currentTestimony].grayImage}
             alt={testimonies[currentTestimony].name}
           />
         </div>
