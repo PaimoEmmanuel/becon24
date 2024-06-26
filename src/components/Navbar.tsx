@@ -24,7 +24,16 @@ const Navbar = () => {
         <a href="#home">
           <img src="/logo.png" alt="EGFM Logo" />
         </a>
-        <button className="nav-menu">
+        <button
+          className="nav-menu"
+          onClick={() => {
+            console.log("omo");
+
+            document
+              .querySelector(".nav-wrap")
+              ?.classList.toggle("nav-wrap-mobile");
+          }}
+        >
           <svg
             width="28"
             height="27"

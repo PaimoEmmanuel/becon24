@@ -76,14 +76,18 @@ body {
 .nav-wrap {
   @apply hidden lg:flex w-full justify-between items-center font-bold;
 }
+.nav-wrap-mobile {
+  @apply flex absolute flex-col w-full left-0 top-20 bg-white pb-12;
+  box-shadow: 0px 4px 8px 0px rgba(197, 197, 197, 0.3019607843);
+}
 .nav-links {
-  @apply flex gap-8 items-center;
+  @apply flex gap-8 items-center flex-col lg:flex-row mb-8 lg:mb-0;
 }
 .nav-links a {
   @apply hover:text-[#B88D38];
 }
 .nav-details {
-  @apply flex gap-10 relative;
+  @apply flex gap-10 relative flex-col lg:flex-row;
 }
 .nav-dropdown {
   @apply flex gap-4 items-center cursor-pointer;
