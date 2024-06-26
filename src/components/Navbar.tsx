@@ -88,25 +88,37 @@ const Navbar = () => {
               </svg>
             </p>
             <div className={`socials ${showDropdown ? "socials-show" : ""}`}>
-              <div>
+              <div className="socials-icons">
                 {socials.map((social) => (
+                  <a
+                    key={social.title}
+                    title={social.title}
+                    href={social.link}
+                    target="_blank"
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
+              <div>
+                {socialsTwo.map((social) => (
                   <a
                     href={social.link}
                     target="_blank"
                     className="social"
                     key={social.title}
-                    style={{ backgroundColor: social.bgColor }}
+                    style={{ backgroundColor: "#FFFAF0" }}
                   >
-                    {social.icon}
+                    <img src={social.img} alt={social.title} />
+
                     <div
                       className="social-text"
-                      style={{ color: social.color }}
                       dangerouslySetInnerHTML={{ __html: social.title }}
                     ></div>
                   </a>
                 ))}
               </div>
-              <div>
+              {/* <div>
                 {socialsTwo.map((social) => (
                   <a
                     href={social.link}
@@ -121,7 +133,7 @@ const Navbar = () => {
                     ></div>
                   </a>
                 ))}
-              </div>
+              </div> */}
             </div>
             <a
               className="nav-button"

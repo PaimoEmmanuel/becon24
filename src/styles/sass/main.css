@@ -92,15 +92,18 @@ body {
   @apply w-[9.5rem] text-sm bg-black dark:bg-white hover:bg-[#B88D38] transition-all text-white dark:text-black flex items-center justify-center h-10 rounded-lg;
 }
 .nav .socials {
-  @apply absolute flex w-[21rem] gap-6 top-12 z-10 rounded-lg -left-40 bg-white dark:bg-black duration-[.3s] opacity-0 transform -translate-x-6;
+  @apply absolute flex flex-col w-[21rem] gap-4 top-12 z-10 rounded-lg -left-6 bg-white dark:bg-black duration-[.3s] opacity-0 transform -translate-x-6;
   @apply w-0 h-0 p-0 overflow-hidden;
   box-shadow: 0px 4px 28px 0px rgba(197, 197, 197, 0.3019607843);
 }
 .nav .socials-show {
-  @apply opacity-100 translate-x-0 w-fit h-auto p-3;
+  @apply opacity-100 translate-x-0 w-fit h-auto p-6;
+}
+.nav .socials-icons {
+  @apply flex gap-5 justify-center;
 }
 .nav .socials .social {
-  @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-1 px-5 w-36;
+  @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-2 px-5 w-[11.25rem];
 }
 .nav .socials .social:hover .social-text {
   @apply gap-2;
