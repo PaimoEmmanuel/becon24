@@ -27,8 +27,6 @@ const Navbar = () => {
         <button
           className="nav-menu"
           onClick={() => {
-            console.log("omo");
-
             document
               .querySelector(".nav-wrap")
               ?.classList.toggle("nav-wrap-mobile");
@@ -116,7 +114,6 @@ const Navbar = () => {
                     target="_blank"
                     className="social"
                     key={social.title}
-                    style={{ backgroundColor: "#FFFAF0" }}
                   >
                     <img src={social.img} alt={social.title} />
 
@@ -127,22 +124,6 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
-              {/* <div>
-                {socialsTwo.map((social) => (
-                  <a
-                    href={social.link}
-                    target="_blank"
-                    className="social"
-                    key={social.title}
-                  >
-                    <img src={social.img} alt={social.title} />
-                    <div
-                      className="social-text"
-                      dangerouslySetInnerHTML={{ __html: social.title }}
-                    ></div>
-                  </a>
-                ))}
-              </div> */}
             </div>
             <a
               className="nav-button"

@@ -107,7 +107,7 @@ body {
   @apply flex gap-5 justify-center;
 }
 .nav .socials .social {
-  @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-2 px-5 w-[11.25rem];
+  @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-2 px-5 w-[11.25rem] bg-[#FFFAF0] dark:bg-[#003];
 }
 .nav .socials .social:hover .social-text {
   @apply gap-2;
@@ -313,11 +313,11 @@ body {
 .about-becon .target-links add-to-calendar-button {
   position: absolute !important;
   right: 0 !important;
-  opacity: 0 !important;
   width: 12rem;
+  display: none;
 }
-.about-becon .target-links add-to-calendar-button:hover {
-  opacity: 1 !important;
+.about-becon .target-links add-to-calendar-button .atcb-button {
+  opacity: 0;
 }
 .about-becon .target-know {
   @apply bg-black dark:bg-white text-white dark:text-black font-medium w-[9.75rem] h-10 transition-all;
@@ -359,7 +359,7 @@ body {
   @apply text-[#FFFFFFCC] mb-4;
 }
 .reasons .testimony-options {
-  @apply flex gap-5;
+  @apply flex gap-5 mt-auto;
 }
 .reasons .testimony-options button {
   @apply w-[74px] h-[74px] rounded-lg overflow-hidden opacity-50;
@@ -371,7 +371,7 @@ body {
   @apply border-[3px] border-[#F1C670] opacity-100;
 }
 .reasons .testimony-img {
-  @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[40.5rem];
+  @apply top-0 right-0 w-full lg:w-1/2 relative sm:h-[42.5rem];
 }
 .reasons .testimony-img img {
   @apply w-full h-full object-cover;
@@ -409,7 +409,7 @@ body {
   @apply text-[#F4DBA8];
 }
 .reasons .stream-cards {
-  @apply flex flex-col xl:flex-row justify-center gap-6 sm:gap-0 lg:max-w-[33.875rem] lg:min-w-[33.875rem];
+  @apply flex flex-col sm:flex-row justify-center gap-6 sm:gap-0 lg:max-w-[33.875rem] lg:min-w-[33.875rem];
 }
 .reasons .stream-card {
   @apply -ml-8;
@@ -538,7 +538,7 @@ body {
   @apply flex flex-col sm:flex-row sm:flex-wrap max-w-[50rem] mx-auto overflow-hidden mt-8;
 }
 .newsletter-input {
-  @apply px-8 text-[#B0B0B0] placeholder-[#B0B0B0] bg-[#FFFCF6] w-full rounded-lg border border-[#EEDFC2] focus:outline-none focus:border-black h-[3.125rem];
+  @apply px-8 placeholder-[#B0B0B0] bg-[#FFFCF6] w-full rounded-lg border border-[#EEDFC2] focus:outline-none focus:border-black h-[3.125rem];
 }
 .newsletter-input:first-child {
   @apply w-[13.4375rem] mb-4 sm:mb-0 sm:mr-4;

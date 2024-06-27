@@ -43,7 +43,7 @@
       }
     }
     .social {
-      @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-2 px-5 w-[11.25rem];
+      @apply flex gap-2 text-sm font-medium items-center py-2 rounded-sm mb-2 px-5 w-[11.25rem] bg-[#FFFAF0] dark:bg-[#003];
       &:hover {
         .social-text {
           @apply gap-2;

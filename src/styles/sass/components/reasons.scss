@@ -19,7 +19,7 @@
       @apply text-[#FFFFFFCC] mb-4;
     }
     &-options {
-      @apply flex gap-5;
+      @apply flex gap-5 mt-auto;
       button {
         @apply w-[74px] h-[74px] rounded-lg overflow-hidden opacity-50;
         img {
@@ -31,7 +31,7 @@
       }
     }
     &-img {
-      @apply top-0 right-0 w-full lg:w-1/2 relative sm:max-h-[40.5rem];
+      @apply top-0 right-0 w-full lg:w-1/2 relative sm:h-[42.5rem];
       img {
         @apply w-full h-full object-cover;
       }
@@ -69,7 +69,7 @@
       }
     }
     &-cards {
-      @apply flex flex-col xl:flex-row justify-center gap-6 sm:gap-0 lg:max-w-[33.875rem] lg:min-w-[33.875rem];
+      @apply flex flex-col sm:flex-row justify-center gap-6 sm:gap-0 lg:max-w-[33.875rem] lg:min-w-[33.875rem];
       // @apply grid grid-cols-4 w-[542px];
     }
     &-card {

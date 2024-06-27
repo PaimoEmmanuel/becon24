@@ -49,10 +49,14 @@
         add-to-calendar-button {
           position: absolute !important;
           right: 0 !important;
-          opacity: 0 !important;
+          // opacity: 0 !important;
           width: 12rem;
-          &:hover {
-            opacity: 1 !important;
+          display: none;
+          // &:hover {
+          //   opacity: 1 !important;
+          // }
+          .atcb-button {
+            opacity: 0;
           }
         }
       }

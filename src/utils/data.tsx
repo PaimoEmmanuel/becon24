@@ -14,7 +14,7 @@ export const socials = [
       >
         <path
           d="M21.1215 0H25.1748L16.3215 10.1867L26.7748 24H18.5615L12.1615 15.6267L4.80151 24H0.748177L10.2415 13.12L0.214844 0H8.64151L14.4548 7.68L21.1215 0ZM19.6815 21.5467H21.9215L7.41484 2.29333H4.96151L19.6815 21.5467Z"
-          fill="black"
+          fill="currentColor"
         />
       </svg>
     ),
@@ -83,5 +83,29 @@ export const socialsTwo = [
     title: "Mixlr <span>→</span>",
     link: "https://egfmfountain.mixlr.com/",
     img: "/mixlr.png",
+  },
+];
+
+export const aboutTargets = [
+  {
+    title: "BECON FOR EVERYONE",
+    content:
+      "Men and women gather from all over the world for a great encounter, irrespective of denomination and culture. Believers’ Convention provides a platform for intense fellowship with the Lord and the brethren.",
+    date: "AUG 18TH - 24TH, 2024",
+    image: "/becon-attendee.png",
+  },
+  {
+    title: "BECON FOR TEENS",
+    content:
+      "At Believers’ Convention, Teenagers enjoy a 6-day fellowship with the Lord. They are redirected to their true purpose in God and strengthened against prevalent youthful lusts that plague young people in the world today.",
+    date: "AUG 18TH - 24TH, 2024",
+    image: "/becon-teens.png",
+  },
+  {
+    title: "BECON FOR KIDS",
+    content:
+      "Jesus loves little children! While parents enjoy the atmosphere of the word of truth, little ones from ages 3-11 are not left out in the ministration of the gospel. They are also exposed to an atmosphere of grace and truth!",
+    date: "AUG 18TH - 24TH, 2024",
+    image: "/becon-kids.png",
   },
 ];
