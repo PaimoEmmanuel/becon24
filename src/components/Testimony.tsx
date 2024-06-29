@@ -14,14 +14,12 @@ const Testimony = ({ testimonies }: TestimonyProps) => {
 
   useEffect(() => {
     const testimonyInterval = setInterval(() => {
-      if (currentTestimony < testimonies.length - 1) {
-        setCurrentTestimony((currentTestimony) => currentTestimony + 1);
-      } else {
-        setCurrentTestimony(0);
-      }
+      setCurrentTestimony((currentTestimony) =>
+        currentTestimony < testimonies.length - 1 ? currentTestimony + 1 : 0
+      );
     }, 10000);
     return () => clearInterval(testimonyInterval);
-  }, []);
+  }, [testimonies.length]);
 
   return (
     <div className="bg-[#000000]">
