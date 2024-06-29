@@ -1,23 +1,6 @@
-import { useEffect, useRef, useState } from "react";
 import { socials, socialsTwo } from "../utils/data";
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-  const dropdownRef = useRef<HTMLParagraphElement>(null);
-  useEffect(() => {
-    document.addEventListener("click", function (event) {
-      if (dropdownRef.current) {
-        const isClickInside = dropdownRef.current.contains(
-          event.target as Node
-        );
-        if (isClickInside) {
-          setShowDropdown(true);
-        } else {
-          setShowDropdown(false);
-        }
-      }
-    });
-  }, []);
   return (
     <div className="nav-wrapper">
       <nav className="nav">
@@ -75,56 +58,61 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="nav-details">
-            <p ref={dropdownRef} className="nav-dropdown">
-              Follow BECON online
-              <svg
-                width="19"
-                height="9"
-                viewBox="0 0 19 9"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.34 0.951172L10.82 7.47117C10.05 8.24117 8.79 8.24117 8.02 7.47117L1.5 0.951172"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeMiterlimit="10"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </p>
-            <div className={`socials ${showDropdown ? "socials-show" : ""}`}>
-              <div className="socials-icons">
-                {socials.map((social) => (
-                  <a
-                    key={social.title}
-                    title={social.title}
-                    href={social.link}
-                    target="_blank"
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
-              <div>
-                {socialsTwo.map((social) => (
-                  <a
-                    href={social.link}
-                    target="_blank"
-                    className="social"
-                    key={social.title}
-                  >
-                    <img src={social.img} alt={social.title} />
+            <div className="dropdown-wrapper">
+              <p className="nav-dropdown">
+                Follow BECON online
+                <svg
+                  width="19"
+                  height="9"
+                  viewBox="0 0 19 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.34 0.951172L10.82 7.47117C10.05 8.24117 8.79 8.24117 8.02 7.47117L1.5 0.951172"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </p>
+              <div className={`socials`}>
+                <div className="socials-wrapper">
+                  <div className="socials-icons">
+                    {socials.map((social) => (
+                      <a
+                        key={social.title}
+                        title={social.title}
+                        href={social.link}
+                        target="_blank"
+                      >
+                        {social.icon}
+                      </a>
+                    ))}
+                  </div>
+                  <div>
+                    {socialsTwo.map((social) => (
+                      <a
+                        href={social.link}
+                        target="_blank"
+                        className="social"
+                        key={social.title}
+                      >
+                        <img src={social.img} alt={social.title} />
 
-                    <div
-                      className="social-text"
-                      dangerouslySetInnerHTML={{ __html: social.title }}
-                    ></div>
-                  </a>
-                ))}
+                        <div
+                          className="social-text"
+                          dangerouslySetInnerHTML={{ __html: social.title }}
+                        ></div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
+
             <a
               className="nav-button"
               target="_blank"

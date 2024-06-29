@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface TestimonyProps {
   testimonies: {
@@ -11,6 +11,18 @@ interface TestimonyProps {
 
 const Testimony = ({ testimonies }: TestimonyProps) => {
   const [currentTestimony, setCurrentTestimony] = useState(0);
+
+  useEffect(() => {
+    const testimonyInterval = setInterval(() => {
+      if (currentTestimony < testimonies.length - 1) {
+        setCurrentTestimony((currentTestimony) => currentTestimony + 1);
+      } else {
+        setCurrentTestimony(0);
+      }
+    }, 10000);
+    return () => clearInterval(testimonyInterval);
+  }, []);
+
   return (
     <div className="bg-[#000000]">
       <div className="testimony">

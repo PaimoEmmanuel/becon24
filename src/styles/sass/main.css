@@ -87,21 +87,33 @@ body {
   @apply hover:text-[#B88D38];
 }
 .nav-details {
-  @apply flex gap-10 relative flex-col lg:flex-row;
+  @apply flex gap-10 relative flex-col lg:flex-row items-center;
 }
 .nav-dropdown {
   @apply flex gap-4 items-center cursor-pointer;
+}
+.nav .dropdown-wrapper:hover .nav-dropdown svg {
+  @apply transition-all transform rotate-180;
+}
+.nav .dropdown-wrapper:hover .socials {
+  @apply opacity-100 translate-x-0 w-fit h-auto overflow-hidden z-20;
+}
+.nav .dropdown-wrapper:hover .socials:hover {
+  @apply opacity-100 translate-x-0 w-fit h-auto overflow-hidden z-20;
+}
+.nav .dropdown-wrapper:hover .socials-wrapper {
+  @apply opacity-100 translate-x-0 w-fit h-auto p-6;
 }
 .nav-button {
   @apply w-[9.5rem] text-sm bg-black dark:bg-white hover:bg-[#B88D38] transition-all text-white dark:text-black flex items-center justify-center h-10 rounded-lg;
 }
 .nav .socials {
-  @apply absolute flex flex-col w-[21rem] gap-4 top-12 z-10 rounded-lg -left-6 bg-white dark:bg-black duration-[.3s] opacity-0 transform -translate-x-6;
+  @apply absolute flex flex-col w-[21rem] gap-4 -top-4 pt-16 -z-10 rounded-lg -left-6 duration-[.3s] opacity-0 transform -translate-x-6;
+}
+.nav .socials-wrapper {
+  @apply flex flex-col  gap-4 bg-white dark:bg-black z-20 p-6;
   @apply w-0 h-0 p-0 overflow-hidden;
   box-shadow: 0px 4px 28px 0px rgba(197, 197, 197, 0.3019607843);
-}
-.nav .socials-show {
-  @apply opacity-100 translate-x-0 w-fit h-auto p-6;
 }
 .nav .socials-icons {
   @apply flex gap-5 justify-center;
