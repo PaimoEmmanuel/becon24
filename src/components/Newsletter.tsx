@@ -3,15 +3,23 @@ const Newsletter = () => {
     <div className="newsletter">
       <p className="newsletter-supertitle">OUR NEWSLETTER</p>
       <h6 className="newsletter-title">STAY TUNED FOR BECON’24 UPDATES</h6>
-      <form className="newsletter-form" action="">
+      <form
+        className="newsletter-form"
+        action=""
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <input
           className="newsletter-input"
-          type="fullname"
-          placeholder="Full name"
+          type="firstname"
+          name="firstname"
+          placeholder="First Name"
         />
         <input
           className="newsletter-input"
           type="email"
+          name="email"
           placeholder="Your email address"
         />
         <button className="newsletter-btn">

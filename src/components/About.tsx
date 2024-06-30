@@ -109,7 +109,11 @@ const About = () => {
                         "MicrosoftTeams",
                       ]}
                       location="Faith Plaza, Bariga, Lagos"
-                      startDate="2024-08-18"
+                      startDate={
+                        target.title === "BECON FOR EVERYONE"
+                          ? "2024-08-18"
+                          : "2024-08-19"
+                      }
                       endDate="2024-08-24"
                       startTime="18:00"
                       endTime="23:30"
