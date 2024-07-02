@@ -1,4 +1,25 @@
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { addToMailingList } from "../util/mail-subscription";
+
 const Newsletter = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const handleSubmit = async () => {
+    if (email && name) {
+      toast
+        .promise(addToMailingList(email, name), {
+          pending: "Please wait..",
+          success: "You have successfully subscribed for updates",
+          error: "An error occured while subscribing, please try again.",
+        })
+        .then(() => {
+          setName("");
+          setEmail("");
+        });
+    }
+  };
   return (
     <div className="newsletter">
       <p className="newsletter-supertitle">OUR NEWSLETTER</p>
@@ -8,6 +29,7 @@ const Newsletter = () => {
         action=""
         onSubmit={(e) => {
           e.preventDefault();
+          handleSubmit();
         }}
       >
         <input
@@ -15,12 +37,20 @@ const Newsletter = () => {
           type="firstname"
           name="firstname"
           placeholder="First Name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
         />
         <input
           className="newsletter-input"
           type="email"
           name="email"
           placeholder="Your email address"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
         <button className="newsletter-btn">
           <svg
@@ -41,6 +71,7 @@ const Newsletter = () => {
           </svg>
         </button>
       </form>
+      <ToastContainer theme="dark" />
     </div>
   );
 };

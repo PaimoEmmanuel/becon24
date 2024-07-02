@@ -13,13 +13,19 @@
   },
   "dependencies": {
     "add-to-calendar-button-react": "^2.6.18",
+    "axios": "^1.7.2",
+    "buffer": "^6.0.3",
     "gsap": "^3.12.5",
+    "qs": "^6.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
+    "react-toastify": "^10.0.5",
     "scrolltrigger": "^1.0.1"
   },
   "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/qs": "^6.9.15",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
