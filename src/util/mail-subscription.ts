@@ -21,15 +21,8 @@ export async function addToMailingList(email: string, name: string) {
         "Content-Type": "application/x-www-form-urlencoded",
       },
     });
-    console.log(
-      `Successfully added ${email} to the mailing list ${mailingList}`
-    );
     return response;
   } catch (error) {
-    console.error(
-      `Failed to add ${email} to the mailing list ${mailingList}`,
-      error
-    );
     return error;
   }
 }
