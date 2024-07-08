@@ -9,7 +9,8 @@
     "dev": "vite & npm run dev:sass & npm run dev:tailwind",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "rsync -avzh ./dist/* becon_deployer@138.68.150.58:/var/www/becon-sites"
   },
   "dependencies": {
     "add-to-calendar-button-react": "^2.6.18",
