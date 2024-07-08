@@ -100,6 +100,7 @@ export const aboutTargets = [
       "At Believers’ Convention, Teenagers enjoy a 6-day fellowship with the Lord. They are redirected to their true purpose in God and strengthened against prevalent youthful lusts that plague young people in the world today.",
     date: "AUG 19TH - 24TH, 2024",
     image: "/becon-teens.png",
+    contact: "+234 704 753 2403",
   },
   {
     title: "BECON FOR KIDS",
@@ -107,5 +108,6 @@ export const aboutTargets = [
       "Jesus loves little children! While parents enjoy the atmosphere of the word of truth, little ones from ages 3-11 are not left out in the ministration of the gospel. They are also exposed to an atmosphere of grace and truth!",
     date: "AUG 19TH - 24TH, 2024",
     image: "/becon-kids.png",
+    contact: "+234 818 287 4823",
   },
 ];

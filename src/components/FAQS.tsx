@@ -33,7 +33,7 @@ const FAQs = () => (
     <h5 className="faqs-title">FREQUENTLY ASKED QUESTIONS</h5>
     <div className="faqs-wrapper">
       {faqs.map((faq) => (
-        <FAQ title={faq.title} answer={faq.answer} />
+        <FAQ title={faq.title} answer={faq.answer} key={faq.title} />
       ))}
     </div>
   </div>

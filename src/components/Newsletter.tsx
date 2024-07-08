@@ -63,10 +63,10 @@ const Newsletter = () => {
             <path
               d="M12.43 0.929688L18.5 6.99969L12.43 13.0697M1.5 6.99969H18.33"
               stroke="white"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>
