@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { socials, socialsTwo } from "../utils/data";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="nav-wrapper">
       <nav className="nav">
@@ -10,40 +13,58 @@ const Navbar = () => {
         <button
           className="nav-menu"
           onClick={() => {
+            setOpen(!open);
             document
               .querySelector(".nav-wrap")
               ?.classList.toggle("nav-wrap-mobile");
           }}
         >
-          <svg
-            width="28"
-            height="27"
-            viewBox="0 0 28 27"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2 2.8335H26"
-              stroke="currentColor"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M2 13.5H26"
-              stroke="currentColor"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M2 24.1665H26"
-              stroke="currentColor"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          {open ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="28"
+              height="28"
+              viewBox="0 0 50 50"
+            >
+              <path
+                fill="currentColor"
+                stroke="currentColor"
+                d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"
+              ></path>
+            </svg>
+          ) : (
+            <svg
+              width="28"
+              height="27"
+              viewBox="0 0 28 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 2.8335H26"
+                stroke="currentColor"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M2 13.5H26"
+                stroke="currentColor"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M2 24.1665H26"
+                stroke="currentColor"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          )}
         </button>
         <div className="nav-wrap">
           <ul className="nav-links">
