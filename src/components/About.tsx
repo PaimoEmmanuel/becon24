@@ -120,7 +120,7 @@ const About = () => {
                           modals[index].style.display = "flex";
                         }}
                       >
-                        Know more <span>→</span>
+                        Contact us <span>→</span>
                       </button>
                     ) : null}
 
