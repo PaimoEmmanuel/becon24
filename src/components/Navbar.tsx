@@ -72,7 +72,9 @@ const Navbar = () => {
               <a href="#about-becon">About BECON</a>
             </li>
             <li>
-              <a href="https://www.egfm.org/about-us">About EGFM</a>
+              <a href="https://www.egfm.org/about-us" target="_blank">
+                About EGFM
+              </a>
             </li>
             <li>
               <a href="#faqs">FAQs</a>
