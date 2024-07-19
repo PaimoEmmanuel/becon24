@@ -192,9 +192,14 @@ body {
 .banner-date {
   @apply tracking-[0.2875rem] mt-4 mb-8;
 }
+.banner-btn-wrapper {
+  @apply flex gap-2 justify-center lg:justify-normal relative;
+}
+.banner-btn-wrapper add-to-calendar-button {
+  @apply absolute right-0 top-0;
+}
 .banner-btn {
-  @apply w-[280px] h-[50px] bg-black hover:bg-[#B88D38] transition-all rounded-lg flex justify-center items-center text-white font-medium;
-  @apply mx-auto lg:mx-0;
+  @apply w-full max-w-[280px] h-[50px] bg-black hover:bg-[#B88D38] transition-all rounded-lg flex justify-center items-center text-white font-medium;
 }
 
 @keyframes fade {
@@ -446,10 +451,10 @@ body {
   @apply text-[#F4DBA8];
 }
 .reasons .stream-cards {
-  @apply flex flex-col sm:flex-row justify-center gap-6 sm:gap-0 lg:max-w-[33.875rem] lg:min-w-[33.875rem];
+  @apply grid grid-cols-2 sm:flex flex-col sm:flex-row justify-center gap-6 sm:gap-0 lg:max-w-[33.875rem] lg:min-w-[33.875rem];
 }
 .reasons .stream-card {
-  @apply -ml-8;
+  @apply sm:-ml-8;
 }
 .reasons .stream-card:first-child {
   @apply mt-[0.625rem] ml-0;

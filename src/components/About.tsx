@@ -143,14 +143,14 @@ const About = () => {
                         endDate="2024-08-24"
                         startTime="18:00"
                         endTime="23:30"
-                        timeZone="America/Los_Angeles"
+                        timeZone="Africa/Lagos"
                       ></AddToCalendarButton>
                       <button
                         className="target-link"
                         onClick={() => {
                           const calendarButton = document.querySelectorAll(
                             "add-to-calendar-button"
-                          )[index];
+                          )[index + 1];
                           if (calendarButton) {
                             calendarButton.style.display = "block";
                           }

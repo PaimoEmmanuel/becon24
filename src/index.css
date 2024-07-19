@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .block {
   display: block;
 }
@@ -1180,10 +1184,30 @@ body {
   letter-spacing: 0.2875rem;
 }
 
+.banner-btn-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .banner-btn-wrapper {
+    justify-content: normal;
+  }
+}
+
+.banner-btn-wrapper add-to-calendar-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
 .banner-btn {
   display: flex;
   height: 50px;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
@@ -1200,18 +1224,6 @@ body {
 .banner-btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(184 141 56 / var(--tw-bg-opacity));
-}
-
-.banner-btn {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 1024px) {
-  .banner-btn {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 }
 
 @keyframes fade {
@@ -2033,7 +2045,8 @@ body {
 }
 
 .reasons .stream-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
@@ -2041,6 +2054,7 @@ body {
 
 @media (min-width: 640px) {
   .reasons .stream-cards {
+    display: flex;
     flex-direction: row;
     gap: 0px;
   }
@@ -2053,8 +2067,10 @@ body {
   }
 }
 
-.reasons .stream-card {
-  margin-left: -2rem;
+@media (min-width: 640px) {
+  .reasons .stream-card {
+    margin-left: -2rem;
+  }
 }
 
 .reasons .stream-card:first-child {
