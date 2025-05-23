@@ -137,10 +137,10 @@ const About = () => {
                         location="Faith Plaza, Bariga, Lagos"
                         startDate={
                           target.title === "BECON FOR EVERYONE"
-                            ? "2024-08-18"
-                            : "2024-08-19"
+                            ? "2025-08-17"
+                            : "2025-08-18"
                         }
-                        endDate="2024-08-24"
+                        endDate="2025-08-23"
                         startTime="18:00"
                         endTime="23:30"
                         timeZone="Africa/Lagos"

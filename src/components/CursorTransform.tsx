@@ -50,11 +50,11 @@ const CursorTransform: React.FC = () => {
   }, []);
   return (
     <div id="ex1" className="cursor-transform banner-img">
-      <img className="ex1-layer" src="/banner.png" alt="Becon 2024" />
-      <img className="ex1-layer" src="/banner-2.png" alt="Becon 2024" />
-      <img className="ex1-layer" src="/banner-3.png" alt="Becon 2024" />
-      <img className="ex1-layer" src="/banner-4.png" alt="Becon 2024" />
-      <img style={{ opacity: 0 }} src="/banner.png" alt="Becon 2024" />
+      <img className="ex1-layer" src="/banner.png" alt="Becon 2025" />
+      <img className="ex1-layer" src="/banner-2.png" alt="Becon 2025" />
+      <img className="ex1-layer" src="/banner-3.png" alt="Becon 2025" />
+      <img className="ex1-layer" src="/banner-4.png" alt="Becon 2025" />
+      <img style={{ opacity: 0 }} src="/banner.png" alt="Becon 2025" />
     </div>
   );
 };

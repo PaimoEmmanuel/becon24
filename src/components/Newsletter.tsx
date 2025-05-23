@@ -23,7 +23,7 @@ const Newsletter = () => {
   return (
     <div className="newsletter">
       <p className="newsletter-supertitle">OUR NEWSLETTER</p>
-      <h6 className="newsletter-title">STAY TUNED FOR BECON’24 UPDATES</h6>
+      <h6 className="newsletter-title">STAY TUNED FOR BECON’25 UPDATES</h6>
       <form
         className="newsletter-form"
         action=""
