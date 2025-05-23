@@ -17,10 +17,10 @@ function getTimeRemaining(endtime: string) {
 }
 
 const Countdown = () => {
-  const [time, setTime] = useState(getTimeRemaining("2024-08-18"));
+  const [time, setTime] = useState(getTimeRemaining("2025-08-17"));
   useEffect(() => {
     setInterval(() => {
-      setTime(getTimeRemaining("2024-08-18"));
+      setTime(getTimeRemaining("2025-08-17"));
     }, 1000);
   }, []);
 

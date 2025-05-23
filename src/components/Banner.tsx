@@ -7,12 +7,12 @@ const Banner = () => {
     <div id="banner-container">
       <div id="home" className="banner">
         <div className="banner-text">
-          <h1 className="banner-heading">BECON24 IS HERE</h1>
+          <h1 className="banner-heading">GLOBAL BECON25 IS HERE</h1>
           <p className="banner-subheading">
             A <span>7-day</span> life-changing event
           </p>
           <Countdown />
-          <p className="banner-date">AUGUST 18TH - 24TH, 2024</p>
+          <p className="banner-date">AUGUST 17TH - 23TH, 2025</p>
           <div className="banner-btn-wrapper calendar-wrapper">
             <a
               href="https://events.egfm.org/"
@@ -57,8 +57,8 @@ const Banner = () => {
                   "MicrosoftTeams",
                 ]}
                 location="Faith Plaza, Bariga, Lagos"
-                startDate="2024-08-18"
-                endDate="2024-08-24"
+                startDate="2025-08-17"
+                endDate="2025-08-23"
                 startTime="18:00"
                 endTime="23:30"
                 timeZone="Africa/Lagos"

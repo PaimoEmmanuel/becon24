@@ -67,7 +67,7 @@ const Reasons = () => {
             PREVIOUSLY ON <span>EGFM BELIEVERS’ CONVENTION</span>
           </h4>
           <div className="previous-text">
-            <p>10 years and on…</p> <br />
+            <p>11 years and on…</p> <br />
             <p>
               Season after season, through the revelation of the divine
               mysteries, Believers' Convention has become even more beautiful as
@@ -174,7 +174,7 @@ const Reasons = () => {
       <div className="bg-[#000000]">
         <div className="stream">
           <h4 className="stream-heading">
-            <span> BECON 24 </span>STREAMING PLATFORMS
+            <span> BECON 25 </span>STREAMING PLATFORMS
           </h4>
           <div className="stream-cards">
             {streamingPlatforms.map((platform, index) => (
