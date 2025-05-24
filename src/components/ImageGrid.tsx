@@ -28,7 +28,7 @@ const ImageGrid = () => (
   <div className="grid-wrapper">
     {images.map((image) => (
       <div key={image.src} className={image.classNameName}>
-        <img src={image.src} alt="" />
+        <img src={image.src} alt="Images from previous Becon editions" />
       </div>
     ))}
   </div>
