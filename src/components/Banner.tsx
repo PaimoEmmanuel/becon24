@@ -14,15 +14,15 @@ const Banner = () => {
           <Countdown />
           <p className="banner-date">AUGUST 17TH - 23TH, 2025</p>
           <div className="banner-btn-wrapper calendar-wrapper">
-            <a
+            {/* <a
               href="https://events.egfm.org/"
               target="_blank"
               className="banner-btn"
             >
               Register now
-            </a>
+            </a> */}
             <div>
-              <button
+              {/* <button
                 onClick={() => {
                   const calendarButton = document.querySelectorAll(
                     "add-to-calendar-button"
@@ -46,7 +46,7 @@ const Banner = () => {
                     fill="#B88D38"
                   />
                 </svg>
-              </button>
+              </button> */}
               <AddToCalendarButton
                 name="EGFM Believers Convention"
                 options={[
