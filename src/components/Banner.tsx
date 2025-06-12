@@ -12,7 +12,7 @@ const Banner = () => {
             A <span>7-day</span> life-changing event
           </p>
           <Countdown />
-          <p className="banner-date">AUGUST 17TH - 23TH, 2025</p>
+          <p className="banner-date">AUGUST 17TH - 23rd, 2025</p>
           <div className="banner-btn-wrapper calendar-wrapper">
             {/* <a
               href="https://events.egfm.org/"
