@@ -196,7 +196,7 @@ body {
   @apply flex gap-2 justify-center lg:justify-normal relative;
 }
 .banner-btn-wrapper add-to-calendar-button {
-  @apply absolute right-0 top-0;
+  @apply absolute right-0 top-0 hidden;
 }
 .banner-btn {
   @apply w-full max-w-[280px] h-[50px] bg-black hover:bg-[#B88D38] transition-all rounded-lg flex justify-center items-center text-white font-medium;

@@ -43,7 +43,7 @@
   &-btn-wrapper {
     @apply flex gap-2 justify-center lg:justify-normal relative;
     add-to-calendar-button {
-      @apply absolute right-0 top-0;
+      @apply absolute right-0 top-0 hidden;
     }
   }
   &-btn {

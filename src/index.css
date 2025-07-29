@@ -1201,6 +1201,7 @@ body {
   position: absolute;
   right: 0px;
   top: 0px;
+  display: none;
 }
 
 .banner-btn {
